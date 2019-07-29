@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Archives: 2019 | DIRTY HANDS QA</title>
+  
+  <meta name="keywords" content="Automation Testing,Performance Testing,Agile,Testing Tool Usage">
+  
+  
+  <meta name="description" content="Learning, Practice,And Never minded">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="msapplication-TileColor" content="#1BC3FB">
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/css/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover  half'>
+      
+        
+  <h1 class='title'>Material X</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header material">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="material"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          DIRTY HANDS QA
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogcategories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogtags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogarchives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/blog/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="blogarchives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+                
+                  rel="nofollow"
+                
+                
+                id="https:xaoxuu.comwikimaterial-x">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+	
+		
+  <section class="post-list">
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/04/28/real/Thoughts-Be-A-Touch-Tester/">
+      Think in Testing 1-Be Tough
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-28</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Think-in-Testing-1-Be-Tough"><a href="#Think-in-Testing-1-Be-Tough" class="headerlink" title="Think in Testing 1: Be Tough"></a>Think in Testing 1: Be Tough</h1><p>If someone tell you that software testing or quality assurance is an easy job to do, he/she might not understand what a tester or qa do.  There are many perspective a tester or qa involved:</p>
+<ol>
+<li>Testing</li>
+<li>Requirement Clarification</li>
+<li>Dev Process/Release Process </li>
+<li>Planning</li>
+</ol>
+<p>Almost every phase QA is involved, it can burn you out easily. Here I just want to talk about some bad thing might happed, and why be tough is a basic charactor of a QA or Tester.</p>
+<h2 id="Don’t-Be-a-maid"><a href="#Don’t-Be-a-maid" class="headerlink" title="Don’t Be a maid"></a>Don’t Be a maid</h2><p>Don’t be a maid, and don’t spend too much time on other’s careless and irresponsibility.<br>Need to fix it.</p>
+<p>In many Chinese domestic company, Tester and QA is a maid of Developer, everything could be in testing scope. Let me summarize several common cases:</p>
+<ol>
+<li>Some incomplete task, need to test</li>
+<li>Some codes never work, neet to test</li>
+<li>Some bug can’t be produced, need to test</li>
+<li>Some performance issues can’t be measured, need to test</li>
+<li>What ever the requirement is, no matter you tester invovled or not, send it to test</li>
+</ol>
+<p>And more important thing is that normally a tester/qa might face 5+ developers. If you can not be tough to Dev, your time and career might be spent for taking care of these guys mistakes,careless. Tester/QA is responsible for the product, not for careleass.<br>Yes, your are finding bugs, but what behind these bugs are careless and irresponsibility. You need to fix careless and irresponsibility though it is tough, so be tough.</p>
+<p>When a production bug occurred, no one will stand in your side.<br>So you need to exposure the facts, I mean real facts, where these bugs? and Why so many bugs, then you can push to reduce bugs, and push DEV moving forward, otherwise every dirty work will on your shoulder. Does DEV not know Unit test can help quality? They know,  Does DEV not know they should tell you a little bit more what a requirement is, because they know you don’t invloved at all in first place? They know, explaination is not a techinical work, in their option, it is not worth to do, that’s it.</p>
+<p>So just tell the dev/dev manager what you want, what the result right now, what is good and what is bad, they will learn from that. Dev Manager love to see feedback. Only thing<br>need to pay attention might be the reporting skill, and how to handle conflict.</p>
+<p>Be a maid is no future in tech world, no one really care about what the careless is, they care about the careless issue should be never happened. You can’t only spend time for others careless, you need to fix it for the root cause.<br>Good Luck, and we tester have long way to go, be tough!</p>
+<h2 id="Show-the-Data-Metrics"><a href="#Show-the-Data-Metrics" class="headerlink" title="Show the Data,Metrics"></a>Show the Data,Metrics</h2><p>Show the data, metrics is good to be professional, and just focus on the thing your team are talked about, not finger point. It can help you be tough and reasonable.<br>But What kind data you can show? It is a question, and also hard to implement. Based on my experience, data like:</p>
+<ol>
+<li>How many Bugs in a sprint?</li>
+<li>How the bugs distributed?</li>
+<li>How a typical bug impact the whole process?</li>
+<li>What the turn around time for the bug or an iteration?</li>
+</ol>
+<p>It is hard to collect data, but it is still worth to collect some of them.</p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/real/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>real</a>
+        
+          <a href="/tags/think-different/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>think-different</a>
+        
+          <a href="/tags/productivity/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>productivity</a>
+        
+          <a href="/tags/ThinkInTesting/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>ThinkInTesting</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/04/25/api-testing/CreditRisk-Testing-2/">
+      Rule Based Risk Engine Part 2 - Write Code to Test
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-25</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Rule-Based-Risk-Engine-Part-2-Write-Code-to-Test"><a href="#Rule-Based-Risk-Engine-Part-2-Write-Code-to-Test" class="headerlink" title="Rule Based Risk Engine Part 2 - Write Code to Test"></a>Rule Based Risk Engine Part 2 - Write Code to Test</h1><p>What to do is quite obvious:</p>
+<ol>
+<li>Compose input data - Test Case Input<ul>
+<li>Fundamental Data</li>
+<li>Third Party And in-house data</li>
+</ul>
+</li>
+<li>Mock the third party and in-house data according test cases</li>
+<li>Call the Evaluation API to checkout if meet the expectation</li>
+</ol>
+<p>And how to write code? I separate into different modules:</p>
+<ul>
+<li>TestCaseLoader: load the whole input parameters</li>
+<li>DataFactory: Produce different Data as input parameters<ul>
+<li>RiskInputDataFactory</li>
+<li>MockDataFactory</li>
+<li>Some Auto Generated Data Helper for testing purposes</li>
+</ul>
+</li>
+<li>Clients: invoke evaluation api and mock service api<ul>
+<li>RiskEvaluationClient</li>
+<li>MockClient</li>
+</ul>
+</li>
+<li>Third Party and In-house Data Feature Manager <ul>
+<li>Feature Manager</li>
+</ul>
+</li>
+<li>Test Case Runner<ul>
+<li>TestCase Runner Template</li>
+</ul>
+</li>
+</ul>
+<p><img src="images/img/risk-test-flow.jpg" alt="img"></p>
+<h2 id="Implement-The-different-Modules-TestCaseLoader"><a href="#Implement-The-different-Modules-TestCaseLoader" class="headerlink" title="Implement The different Modules - TestCaseLoader"></a>Implement The different Modules - TestCaseLoader</h2><p>TestCaseLoader, levarage easy-poi, it helps you to read/write excel<br>very quickly. For how to use easy-poi, please refer <a href="http://easypoi.mydoc.io/" target="_blank" rel="noopener">easy-poi</a></p>
+<h2 id="Implement-The-different-Modules-Datafactory"><a href="#Implement-The-different-Modules-Datafactory" class="headerlink" title="Implement The different Modules - Datafactory"></a>Implement The different Modules - Datafactory</h2><p>All about handle data, so need some utility class, </p>
+<ul>
+<li>IdCard Generator</li>
+<li>Generate IDCard through age</li>
+<li>Generate several ids, like request id</li>
+<li>Generate Times, such as creditTime</li>
+</ul>
+<p>So I just write all these utilities, they are in <a href></a></p>
+<h2 id="Implement-The-different-Modules-MockDataFactory"><a href="#Implement-The-different-Modules-MockDataFactory" class="headerlink" title="Implement The different Modules - MockDataFactory"></a>Implement The different Modules - MockDataFactory</h2><p>It is very hard at the beginning,  because there is not place to indicate there third party and in-house data name, and also there is big amount of these features. </p>
+<p>Finally I just find out that leverage Dev’s codes is the bese option. Do a quick change, and use Spring Class Scanner function do helo me a lot to achieve to mange the third part and in-houce data.</p>
+<h2 id="Implement-The-different-Modules-Clients"><a href="#Implement-The-different-Modules-Clients" class="headerlink" title="Implement The different Modules - Clients"></a>Implement The different Modules - Clients</h2><p>It is quite simple, just leverage the Okwrap client.</p>
+<h2 id="Implement-The-different-Modules-TestRunner"><a href="#Implement-The-different-Modules-TestRunner" class="headerlink" title="Implement The different Modules - TestRunner"></a>Implement The different Modules - TestRunner</h2><p>TestRunnerTemplate</p>
+<ul>
+<li>Before</li>
+<li>Run</li>
+<li>After</li>
+</ul>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/patterns/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>patterns</a>
+        
+          <a href="/tags/testing/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>testing</a>
+        
+          <a href="/tags/API-Testing/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>API Testing</a>
+        
+          <a href="/tags/real/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>real</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/04/23/api-testing/CreditRisk-Testing-1/">
+      Rule Based Risk Engine Testing Part 1- Background
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-23</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Rule-Based-Risk-Engine-Testing-Part-1-Background"><a href="#Rule-Based-Risk-Engine-Testing-Part-1-Background" class="headerlink" title="Rule Based Risk Engine Testing Part 1- Background"></a>Rule Based Risk Engine Testing Part 1- Background</h1><p>This article introduces a real world case for testing a rule based risk engine. Let me separate it into several parts:</p>
+<ul>
+<li>System Overview to introduct the rule based risk engine</li>
+<li>Typical Cases</li>
+<li>Automate the test cases, and how ?</li>
+</ul>
+<h2 id="1-Rule-Based-Risk-Engine-System-Overview"><a href="#1-Rule-Based-Risk-Engine-System-Overview" class="headerlink" title="1. Rule Based Risk Engine System Overview"></a>1. Rule Based Risk Engine System Overview</h2><p>This is my fist risk engine project. I am not sure how other risk engine does,just try to introduce what I experienced, and what I had found.</p>
+<p>Let’s start with what this module does. In short, this risk engine provides a capability to rate a loan applicant from whethere he/she is eligible for a loan to how much he/she can borrow. So There are two major results:</p>
+<ul>
+<li>is eligible?</li>
+<li>And what the score/credit amount/terms for this applicant</li>
+</ul>
+<p>And there are different products to apply, so the rule and rating system should be configurable. There are rule engine,scorecard and decision tree components to meet the configuration needs.</p>
+<p>The whole workflow is like this:</p>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/risk-flow-1.jpg" alt="img"></p>
+<p>The whole system is a decision flow, which includes<br>anti-fraud rules, score-card for rating and decision tree to make a decision. If you wanto unify it, it is a decision flow, which composed by rules and decision trees.</p>
+<h3 id="1-1-A-short-introduction-for-Rule-Engine"><a href="#1-1-A-short-introduction-for-Rule-Engine" class="headerlink" title="1.1 A short introduction for Rule Engine"></a>1.1 A short introduction for Rule Engine</h3><p><a href="https://www.martinfowler.com/bliki/RulesEngine.html" target="_blank" rel="noopener">Rule Engine</a> article from Martin Flow, it abstracts rule engine into three conceptions:</p>
+<ol>
+<li>Condition</li>
+<li>Action</li>
+<li>Chain</li>
+</ol>
+<p>Basically A rule includes conditons and actions, and the chain composites these rules’ conditions and actions by a runtime context.</p>
+<p>An example in this blog for explaination:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if car.owner.hasCellPhone then premium += 100;</span><br><span class="line">if car.model.theftRating &gt; 4 then premium += 200;</span><br><span class="line">if car.owner.livesInDodgyArea &amp;&amp; car.model.theftRating &gt; 2 </span><br><span class="line">then premium += 300;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><figcaption><span>is condition, and ```then``` is action, one ```rule```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">is composed by one ```if``` and one ```then```. And the chain is composed by different rules. Obviously the ```premium``` should be in the chain context in this case, because it passed through the whole rule sets.</span><br><span class="line"></span><br><span class="line">Quite simple and easy to understand.The single rule is simple enough, so the testing might be undervalued. Think about if there are hundrends rules out there, test and understand the whole picture might be not easy compared with a single rule. This is what Martin Flow claimed, and also he worried about the implicit rule and context in the rule engine module.</span><br><span class="line"></span><br><span class="line">The Rule Risk Engine I meet was simillar to what mentioned in this blog. The difference is that it has wight point for socre card and decision tree modules. In this system, a rule is A node which contains:</span><br><span class="line"></span><br><span class="line">1. Expressions for evaluating an input data</span><br><span class="line">2. A Weight for a rule</span><br><span class="line">3. Composite Rule for Weight Point to make different disicion</span><br><span class="line">4. Also this Node points a true or false path to go different evaluation path</span><br><span class="line"></span><br><span class="line">What ever these nodes contain, just think about it is a chain or composite rule. Here is a simple case to demostrate how the system works:</span><br><span class="line"></span><br><span class="line">![img](https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/DecisionFlow.jpg)</span><br><span class="line"></span><br><span class="line">The output is a score. A score represents how much could be borrowed in a loan system. In this simple case, the age might be a implicit feature which should be fetched by internal api based on fundamental data like IDCard Number or SSN Number. And the rules and score card rules are pre-defined(So it is ruled based system).</span><br><span class="line"></span><br><span class="line">So you can understand the whole module in this way:</span><br><span class="line"></span><br><span class="line">1. Featch all relative data for the rules based on the fundamental information, these relative data need to be mocked because I can&apos;t control what third party api returned, while tests need to controll what the thrid party api should return as an input variable.</span><br><span class="line">2. Go through all the rule nodes, evaluate the result and the score to get a conclusion which indicates eliable for a loan, and how much could be borrowed.</span><br><span class="line"></span><br><span class="line">So the modules should aim at how to fetch the data(facts) , and how to go through the rule engine to calculate a score. And so does this module. </span><br><span class="line"></span><br><span class="line">### 1.2 Rule Based Risk Engine Components</span><br><span class="line"></span><br><span class="line">Here are components:</span><br><span class="line"></span><br><span class="line">![img](https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/risk-flow-2.jpg)</span><br><span class="line"></span><br><span class="line">There are many different tech stack used, such as elastic search, mongodb, hbase, redis,spring boot, rule engine,etc. It is hard to test in my first impression, not only it is complex, but also I only had one week to understand the whole system, and I am the only person who is responsoible for testing, meanwhile there are actual 7 developers out there.</span><br><span class="line"></span><br><span class="line">Learn it,separate the concerns, and then check out what these components really do:</span><br><span class="line"></span><br><span class="line">- ***Third Party Service*** : Fetch Data,it calls different third party services to get some risk relative values like what the income level of an applicant, is there any loans, is there any overdue during the past one year,etc. Then provide these data to rule engine as facts(so called risk features)</span><br><span class="line">- ***Data Aggeragation Service***: Fetch Data from in-house data warehouse,aggeragating in house data to provide to rule engine as facts/risk features</span><br><span class="line">- ***Data Collection Service***: Fetch Data,simillar too, collect different in house data to provide to rule engin as facts/risk features</span><br><span class="line">- ***Rule Engine***: Rules Engine,process the risk evaluation to figure out eligable result and risk rating result</span><br><span class="line">- ***Rule Tracing***: supplement component, tracing every rule evalution result for debug to error diagose</span><br><span class="line">- ***Risk Evaluation Store***: supplement component,store rule evealution result</span><br><span class="line">- ***rule tracing, risk result store***, these are supplement components, they may be important later but not now because this is a rule engine system for a startup department, just starting to accomulate the risk data</span><br><span class="line"></span><br><span class="line">After dive into these components a little bit, It is easy to find out that the key critical component is the Rule engine in current stage which shoule be absolutely the priority. Other components are more like data collector/feeder or result recorder. They should be important if the volumn of users increased,or more features need to be produced. But on current stage,it is just a MVP product which try to validate if the idea is feasible.</span><br><span class="line"></span><br><span class="line">The more things need to do, the more I need to focus a critical componet. So I focused the Rule Engine first.</span><br><span class="line"></span><br><span class="line">### 1.3 Rule Engine Typical Cases</span><br><span class="line"></span><br><span class="line">The rule engine typical cases is that:</span><br><span class="line">![img](https://raw.githubusercontent.com/evenhumble/hustle-player/master//img/RiskEventFlow.jpg)</span><br><span class="line"></span><br><span class="line">The things turn out that, rule engine accepts income risk input, and leverage all the different data from third party/data collection/data aggeragation services, then output the risk rating.</span><br><span class="line"></span><br><span class="line">Let me summary it in a tester point view, rule engine&apos;s input is different data, and the output is the data calculated by the rules. If the rule composed by rules,and decision tree, the test cases covered all the node and path, then it is good to go. </span><br><span class="line"></span><br><span class="line">### 1.4  Test It</span><br><span class="line"></span><br><span class="line">Let&apos;s see a test case first:</span><br><span class="line"></span><br><span class="line">Test Case Input:</span><br><span class="line"></span><br><span class="line">```json</span><br><span class="line">&#123;</span><br><span class="line">    &quot;riskFeatures&quot;: &#123;</span><br><span class="line">      &quot;idNumber&quot;: &quot;610304199801120878&quot;,</span><br><span class="line">        &quot;levelType&quot;: &quot;10&quot;,</span><br><span class="line">        &quot;flowNo&quot;: &quot;1506&quot;,</span><br><span class="line">        &quot;applicationId&quot;: &quot;ac8e120c-3615-4bdb-a92d-a118e24e33da&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>I can change the levelType to different value, then send to risk evaluation api to get different result.<br>And this is typical test cases design.</p>
+<p>Testing a Rule steps: </p>
+<ol>
+<li>change the risk input date</li>
+<li>call risk evaluation api</li>
+<li>get result and check the result</li>
+</ol>
+<p>It looks very easy. The problem is how many these kind of parameters are? In a real case, normally 50+ parameters need to change because the third party data are aslo the input of rule engine which I can’t control it only mock it as input implicit parameters. So it is going to be crazy if create and maintain these test cases manually.</p>
+<p>There third part data is like:<br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/risk_parameters.jpg" alt="img"></p>
+<p>The best case for 50 parameters test cases design, every parameters has 3 possible values, then at least there are 150 cases(doesn’t consider the combination).</p>
+<p>Manual testing is not a option under this condition if the business need to complete all the testing in one day, also it will burn me out if do these testing more than one time.</p>
+<p>So the only option is to write code to test(I don’t like the term automation testing, I prefer the term write codes for testing).</p>
+<p>Let’s start coding. Coding is not rocket science, don’t be afraid of it especially for testers. In next article, how to implement the test code will be introduced. It is not that hard but improve the productivity significantly. One more point is that it might be more interesting than do it manually in this case.</p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/patterns/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>patterns</a>
+        
+          <a href="/tags/testing/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>testing</a>
+        
+          <a href="/tags/API-Testing/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>API Testing</a>
+        
+          <a href="/tags/real/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>real</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/04/20/0-GIT-SUBMODULE/">
+      Git Sub Module Usage
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Git-Sub-Module-Usage"><a href="#Git-Sub-Module-Usage" class="headerlink" title="Git Sub Module Usage"></a>Git Sub Module Usage</h1><p>A Git Repo sometimes has several sub projects which are also a git repo. Let’s walk through following scenarios to became a super<br>git sub module user. The Scenario are:</p>
+<ul>
+<li>Add Git Sub odule into a existing Git Repo</li>
+<li>Git Clone With Sub Modules</li>
+<li>Push To Sub Module’s remote repo</li>
+</ul>
+<h2 id="Add-Git-Sub-Module-into-a-existing-Git-Repo"><a href="#Add-Git-Sub-Module-into-a-existing-Git-Repo" class="headerlink" title="Add Git Sub Module into a existing Git Repo"></a>Add Git Sub Module into a existing Git Repo</h2><p>It is a quit straight forward. You have already clone one git repo to local, then you want to add a sub module to this repo.<br>So just using:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add https://github.com/allroundtesters/Shell-Steps.git</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><figcaption><span>submodule add <git repo url> <local dir>``` is the command </local></git></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">to use. Just checkout the folder, everything is there. So easy, no magic. But what is different with ```git clone ```, The different is that ```.gitmodules``` file is added to the existing repo, and there sub module info is in it:</span><br><span class="line"></span><br><span class="line">```sh</span><br><span class="line">[submodule &quot;Shell-Steps&quot;]</span><br><span class="line">	path = Shell-Steps</span><br><span class="line">	url = https://github.com/allroundtesters/Shell-Steps.git</span><br></pre></td></tr></table></figure>
+
+<p>Obviously, if you add more than one sub module, the sub module info will be appened into the <figure class="highlight plain"><figcaption><span>file to make the parent repo know where the sub modules are.</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">That&apos;s it.</span><br><span class="line"></span><br><span class="line">## Git Clone With Sub Modules</span><br><span class="line"></span><br><span class="line">Normally you git clone one project, then find out several folders is empty, then you are confused what happened.  Don&apos;t worry, use the following command to have a try:</span><br><span class="line"></span><br><span class="line">```sh</span><br><span class="line">git pull  --recurse-submodules</span><br><span class="line"># or for git 1.8.2</span><br><span class="line">git submodule update --recursive --remote</span><br></pre></td></tr></table></figure></p>
+<p>Then everything is ready. Go to work right now.</p>
+<h2 id="Push-To-Sub-Module’s-remote-repo"><a href="#Push-To-Sub-Module’s-remote-repo" class="headerlink" title="Push To Sub Module’s remote repo"></a>Push To Sub Module’s remote repo</h2><p>There is no difference. Go to the Sub Module Folder. Then use git push or change the working branch. Everything is same as the single git repo. T here are several advaned command for sub modules, your can read <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank" rel="noopener">gitbook-submodules</a> for more details.</p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/git/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>git</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/04/20/1-Add_Anaconda3_Python/">
+      Use Anaconda3 Python In Ubuntue Usage
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Use-Anaconda3-Python-In-Ubuntu"><a href="#Use-Anaconda3-Python-In-Ubuntu" class="headerlink" title="Use Anaconda3 Python In Ubuntu"></a>Use Anaconda3 Python In Ubuntu</h1><p>First of all, where is your annaconda3 installed, and where is the system python path?</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># anaconda3 path</span></span><br><span class="line">~/anaconda3/bin</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> `whereis python`</span><br></pre></td></tr></table></figure>
+
+<p>Then Add you anaconda3 to ~/.zshrc or ~/.bashrc PATH</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> ANACONDA_HOME=~/anaconda3</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$ANACONDA_HOME</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/python/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>python</a>
+        
+          <a href="/tags/annaconda3/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>annaconda3</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/04/20/api-testing/APITesting-Intro/">
+      Build API Testing Framework-1 - Learn Http Api
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Build-API-Testing-Framework-1-Learn-Http-Api"><a href="#Build-API-Testing-Framework-1-Learn-Http-Api" class="headerlink" title="Build API Testing Framework-1 - Learn Http Api"></a>Build API Testing Framework-1 - Learn Http Api</h1><p>API now, in most cases, it is a HTTP API which over http protocol. It is hard to explain without a example, so let’s start with a HelloWorld API sample.<br>The main purposes of these apis are to do the CRUD(Create/Read/Update/Delete) against the resouce <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">Here are HTTP Methods mapping to CRUD:</span><br><span class="line"></span><br><span class="line">|HTTP Method|CRUD|Resource|Response|</span><br><span class="line">|-----------|----|--------|--------|</span><br><span class="line">|GET|Read|/HelloWorld/&#123;id&#125;|200:success/404: not found|</span><br><span class="line">|POST|Create|/HelloWorld|200:success/404: not found|</span><br><span class="line">|Update|Update|/HelloWorld/&#123;id&#125;|200:success/404: not found|</span><br><span class="line">|Delete|Delete|/HelloWorld/&#123;id&#125;|200:success/404: not found|</span><br><span class="line"></span><br><span class="line">It is easy to implement a sets of APIs against resource HelloWorld based on SpringBoot, here comes demo codes:</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">@RestController</span><br><span class="line">public class HelloWorldController &#123;</span><br><span class="line"></span><br><span class="line">    @GetMapping(&quot;/HelloWorld/&#123;id&#125;&quot;)</span><br><span class="line">    public BaseResponse getHelloWorld(@PathVariable Long id) &#123;</span><br><span class="line">        return BaseResponse.OK().data(HelloWorldDTO.builder().id(id).msg(&quot;Hello World&quot;).build());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @PostMapping(&quot;/HelloWorld&quot;)</span><br><span class="line">    public BaseResponse&lt;HelloWorldDTO&gt; createHelloWorld(@RequestBody HelloWorldDTO requestBody) &#123;</span><br><span class="line">        return BaseResponse.OK().data(requestBody);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @PutMapping(&quot;/HelloWorld/&#123;id&#125;&quot;)</span><br><span class="line">    public BaseResponse&lt;HelloWorldDTO&gt; updateHelloWorld(@PathVariable Long id, @RequestBody HelloWorldDTO updateData) &#123;</span><br><span class="line"></span><br><span class="line">        return BaseResponse.OK().data(updateData);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @DeleteMapping(&quot;/HelloWorld/&#123;id&#125;&quot;)</span><br><span class="line">    public BaseResponse&lt;HelloWorldDTO&gt; deleteHelloWorld(@PathVariable Long id) &#123;</span><br><span class="line">        return BaseResponse.OK().data(HelloWorldDTO.builder().id(id).msg(&quot;deleted!&quot;).build());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Start the web server, actaully there are 4 apis with different HTTP methods, GET/DELETE/POST/PUT, use postman to check what happened:</p>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/maste/img/postman-get.jpg" alt="img"><br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/maste/img/postman-post.jpg" alt="img"></p>
+<p>It represents how the api work, and how to use postman to invoke the http api to get a result.</p>
+<p>So the api testing is simple, a client send a http request, then get the http response to check if the response is correct. </p>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/maste/img/api_response.png" alt="img"></p>
+<p>In this case, if you want to start a api automation testing, what kind of codes need to write? In this case, it is very simple:</p>
+<ol>
+<li>A clint to invoke http api: Client</li>
+<li>Data builder to build input data: InputData</li>
+<li>Verify the response: OutputData</li>
+</ol>
+<p>the code example generated bu postman(java and OkHttpClient) is :</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">OkHttpClient client = new OkHttpClient();</span><br><span class="line"></span><br><span class="line">MediaType mediaType = MediaType.parse(<span class="string">"application/json"</span>);</span><br><span class="line">RequestBody body = RequestBody.create(mediaType, <span class="string">"&#123;\"msg\":123&#125;"</span>);</span><br><span class="line">Request request = new Request.Builder()</span><br><span class="line">  .url(<span class="string">"http://localhost:9090/HelloWorld"</span>)</span><br><span class="line">  .post(body)</span><br><span class="line">  .addHeader(<span class="string">"Content-Type"</span>, <span class="string">"application/json"</span>)</span><br><span class="line">  .addHeader(<span class="string">"cache-control"</span>, <span class="string">"no-cache"</span>)</span><br><span class="line">  .addHeader(<span class="string">"Postman-Token"</span>, <span class="string">"ac6e83d3-8446-4ae7-81ea-59316ca5cce7"</span>)</span><br><span class="line">  .build();</span><br><span class="line"></span><br><span class="line">Response response = client.newCall(request).execute();</span><br></pre></td></tr></table></figure>
+
+<p>Copy these codes, and run in maven project, your first API automation code is completed.</p>
+<p>By the way, there are several questions for HTTP API:</p>
+<ul>
+<li>What is Idempotent Methods? GET/HEAD/PUT/DELETE are declared idemponten</li>
+<li>What Option method used for? </li>
+<li>Is http api stateless? What does the stateless mean? All the information is in the request.</li>
+</ul>
+<p>In Next Chapter, let’s write code and go through these cases.</p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>java</a>
+        
+          <a href="/tags/patterns/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>patterns</a>
+        
+          <a href="/tags/testing/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>testing</a>
+        
+          <a href="/tags/API-Testing/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>API Testing</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/02/20/2-SimpleDateFormat-Parse-Is-Not-ThreadSafe/">
+      JAVA SimpleDateFormat Not ThreadSafe Python In Ubuntue Usage
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-02-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="JAVA-SimpleDateFormat-Not-ThreadSafe"><a href="#JAVA-SimpleDateFormat-Not-ThreadSafe" class="headerlink" title="JAVA SimpleDateFormat Not ThreadSafe"></a>JAVA SimpleDateFormat Not ThreadSafe</h1><p>SimpleDateFormat is not threadsafe, so when we use it in the a multiple threads environment, be careful.</p>
+<p>Follow is a JAVA class to demo the error:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">public class SimpleDateFormatThreadUnsafetyExample &#123;</span><br><span class="line"></span><br><span class="line">    private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat(<span class="string">"yyyy-MM-dd'T'HH:mm:ss"</span>);  <span class="comment">## the evil here,it is not thread safe</span></span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String dateStr = <span class="string">"2018-06-22T10:00:00"</span>;</span><br><span class="line"></span><br><span class="line">        ExecutorService executorService = Executors.newFixedThreadPool(10);</span><br><span class="line">        Runnable task = () -&gt; parseDate(dateStr);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (int i = 0; i &lt; 100; i++) &#123;</span><br><span class="line">            executorService.submit(task);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        executorService.shutdown();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static void parseDate(String dateStr) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            Date date = simpleDateFormat.parse(dateStr);</span><br><span class="line">            System.out.println(<span class="string">"Successfully Parsed Date "</span> + date);</span><br><span class="line">        &#125; catch (ParseException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"ParseError "</span> + e.getMessage());</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Run it, let’s see what happeded?Following errors: </p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">java.lang.NumberFormatException: For input string: <span class="string">"20182018E"</span></span><br><span class="line">	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)</span><br><span class="line">	at java.lang.Long.parseLong(Long.java:589)</span><br><span class="line">	at java.lang.Long.parseLong(Long.java:631)</span><br><span class="line">	at java.text.DigitList.getLong(DigitList.java:195)</span><br><span class="line">	at java.text.DecimalFormat.parse(DecimalFormat.java:2084)</span><br><span class="line">	at java.text.SimpleDateFormat.subParse(SimpleDateFormat.java:1869)</span><br><span class="line">	at java.text.SimpleDateFormat.parse(SimpleDateFormat.java:1514)</span><br><span class="line">	at java.text.DateFormat.parse(DateFormat.java:364)</span><br><span class="line">	at io.qkits.dailyissues.concurrence.SimpleDateFormatThreadUnsafetyExample.parseDate(SimpleDateFormatThreadUnsafetyExample.java:28)</span><br><span class="line">	at io.qkits.dailyissues.concurrence.SimpleDateFormatThreadUnsafetyExample.lambda<span class="variable">$main</span><span class="variable">$0</span>(SimpleDateFormatThreadUnsafetyExample.java:17)</span><br><span class="line">	at java.util.concurrent.Executors<span class="variable">$RunnableAdapter</span>.call(Executors.java:511)</span><br><span class="line">	at java.util.concurrent.FutureTask.run(FutureTask.java:266)</span><br><span class="line">	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</span><br><span class="line">	at java.util.concurrent.ThreadPoolExecutor<span class="variable">$Worker</span>.run(ThreadPoolExecutor.java:624)</span><br><span class="line">	at java.lang.Thread.run(Thread.java:748)</span><br><span class="line">java.lang.NumberFormatException: multiple points</span><br><span class="line">	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1890)</span><br><span class="line">	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)</span><br><span class="line">	at java.lang.Double.parseDouble(Double.java:538)</span><br><span class="line">	at java.text.DigitList.getDouble(DigitList.java:169)</span><br><span class="line">	at java.text.DecimalFormat.parse(DecimalFormat.java:2089)</span><br><span class="line">	at java.text.SimpleDateFormat.subParse(SimpleDateFormat.java:2162)</span><br><span class="line">	at java.text.SimpleDateFormat.parse(SimpleDateFormat.java:1514)</span><br><span class="line">	at java.text.DateFormat.parse(DateFormat.java:364)</span><br><span class="line">	at io.qkits.dailyissues.concurrence.SimpleDateFormatThreadUnsafetyExample.parseDate(SimpleDateFormatThreadUnsafetyExample.java:28)</span><br><span class="line">	at io.qkits.dailyissues.concurrence.SimpleDateFormatThreadUnsafetyExample.lambda<span class="variable">$main</span><span class="variable">$0</span>(SimpleDateFormatThreadUnsafetyExample.java:17)</span><br><span class="line">	at java.util.concurrent.Executors<span class="variable">$RunnableAdapter</span>.call(Executors.java:511)</span><br><span class="line">	at java.util.concurrent.FutureTask.run(FutureTask.java:266)</span><br><span class="line">	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</span><br><span class="line">	at java.util.concurrent.ThreadPoolExecutor<span class="variable">$Worker</span>.run(ThreadPoolExecutor.java:624)</span><br><span class="line">	at java.lang.Thread.run(Thread.java:748)</span><br></pre></td></tr></table></figure>
+
+<p>So move the SimpleDateFormat from static field to method level, it can solve this issue,or make the pareDate function sync.</p>
+<h2 id="All-the-SimpleDateFormat-method-is-not-not-thread-safe"><a href="#All-the-SimpleDateFormat-method-is-not-not-thread-safe" class="headerlink" title="All the SimpleDateFormat method is not not thread safe?"></a>All the SimpleDateFormat method is not not thread safe?</h2><p>if I change the pareDate method as follow:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">parseDate</span><span class="params">(String dateStr)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">          Date date = simpleDateFormat.parse(dateStr);</span><br><span class="line">          System.out.println(<span class="string">"Successfully Parsed Date "</span> + date);</span><br><span class="line">      &#125; <span class="keyword">catch</span> (ParseException e) &#123;</span><br><span class="line">          System.out.println(<span class="string">"ParseError "</span> + e.getMessage());</span><br><span class="line">      &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">          e.printStackTrace();</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      System.out.println(formatDate(<span class="keyword">new</span> Date()));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">formatDate</span><span class="params">(Date date)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> simpleDateFormat.format(date);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>re-run it and even add more threads to run it, there is no error?<br>Why and what happened? Need to dig it more deeper.</p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>java</a>
+        
+          <a href="/tags/concurrent/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>concurrent</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/02/20/real/3-Defensive-programing/">
+      Defensive Programming
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-02-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Defensive-Programming-reuse-the-validation"><a href="#Defensive-Programming-reuse-the-validation" class="headerlink" title="Defensive Programming - reuse the validation"></a>Defensive Programming - reuse the validation</h1><p>What does Defensive Programming mean? Let’s look at some sampels:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Report</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">export</span><span class="params">(File file)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (file == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(</span><br><span class="line">                    <span class="string">"File is NULL; can't export."</span></span><br><span class="line">            );</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(</span><br><span class="line">                    <span class="string">"File already exists."</span></span><br><span class="line">            );</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// Export the report to the file</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>In this case, there are several validation for the input paramter to make sure the input is in a right manner. It is the sense of defensive programing. Be sure, don’t grant the input parameter. </p>
+<p>But actually it is quite boilet code for input parameter validation. </p>
+<p>For example, if we define a Report Interface:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Report</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">export</span><span class="params">(File file)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>And we have several different Reports to implement this interface, do we need to do the validate in every implementation? The answer is it depends, we can implement a DefaultReport, to decorate different report as example.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DefaultReport</span> <span class="keyword">implements</span> <span class="title">Report</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">export</span><span class="params">(File file)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (file == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(</span><br><span class="line">                    <span class="string">"File is NULL; can't export."</span></span><br><span class="line">            );</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(</span><br><span class="line">                    <span class="string">"File already exists."</span></span><br><span class="line">            );</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// Export the report to the file</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NoWriteOverReport</span> <span class="keyword">implements</span> <span class="title">Report</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Report origin;</span><br><span class="line"></span><br><span class="line">    NoWriteOverReport(Report rep) &#123;</span><br><span class="line">        <span class="keyword">this</span>.origin = rep;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">export</span><span class="params">(File file)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(</span><br><span class="line">                    <span class="string">"File already exists."</span></span><br><span class="line">            );</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.origin.export(file);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Report report = <span class="keyword">new</span> NoWriteOverReport(</span><br><span class="line">                <span class="keyword">new</span> DefaultReport()</span><br><span class="line">        );</span><br><span class="line">        File file = <span class="keyword">new</span> File(<span class="string">"."</span>);</span><br><span class="line">        report.export(file);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>So we can reuse the default report valitor now. </p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>java</a>
+        
+          <a href="/tags/patterns/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>patterns</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/02/20/real/ALGO-0-bigo/">
+      Algorithm Big-O notion
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-02-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Algorithm-Big-O-notion"><a href="#Algorithm-Big-O-notion" class="headerlink" title="Algorithm Big-O notion"></a>Algorithm Big-O notion</h1><p><a href="http://www.bigocheatsheet.com/" target="_blank" rel="noopener">reference</a></p>
+<p><img src="../imgs/bigo-operation.jpg" alt="img"></p>
+<p><img src="../imgs/common-ds.jpg" alt="img"></p>
+<p><img src="../imgs/array-sorting.jpg" alt="img"></p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>java</a>
+        
+          <a href="/tags/patterns/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>patterns</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+      <br>
+      <div class="prev-next">
+        <div class="prev-next">
+          
+            <a class="prev" rel="prev" href="/archives/2019/">
+              <section class="post prev" >
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+              </section>
+            </a>
+          
+          <p class="current">
+            2 / 2
+          </p>
+          
+        </div>
+      </div>
+
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
+
+  
+
+
+	
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+        
+          
+          
+            <section class='widget author'>
+  <div class='content material'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png'/>
+      </div>
+    
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:me@xaoxuu.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/xaoxuu"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=63035382"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            <section class='widget grid'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/API-Testing/" style="font-size: 19px; color: #777">API Testing</a> <a href="/tags/Automation/" style="font-size: 16.5px; color: #888">Automation</a> <a href="/tags/CI-CD/" style="font-size: 19px; color: #777">CI/CD</a> <a href="/tags/CICD/" style="font-size: 14px; color: #999">CICD</a> <a href="/tags/JAVA/" style="font-size: 14px; color: #999">JAVA</a> <a href="/tags/MAVEN/" style="font-size: 14px; color: #999">MAVEN</a> <a href="/tags/Notes/" style="font-size: 14px; color: #999">Notes</a> <a href="/tags/Performance/" style="font-size: 14px; color: #999">Performance</a> <a href="/tags/Project-Setup/" style="font-size: 14px; color: #999">Project Setup</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/TDD/" style="font-size: 14px; color: #999">TDD</a> <a href="/tags/ThinkInTesting/" style="font-size: 14px; color: #999">ThinkInTesting</a> <a href="/tags/ThreadDump/" style="font-size: 14px; color: #999">ThreadDump</a> <a href="/tags/Tip/" style="font-size: 14px; color: #999">Tip</a> <a href="/tags/agile-metrics/" style="font-size: 14px; color: #999">agile metrics</a> <a href="/tags/algorithm/" style="font-size: 14px; color: #999">algorithm</a> <a href="/tags/annaconda3/" style="font-size: 14px; color: #999">annaconda3</a> <a href="/tags/ansible/" style="font-size: 16.5px; color: #888">ansible</a> <a href="/tags/cheatsheet/" style="font-size: 14px; color: #999">cheatsheet</a> <a href="/tags/concurrent/" style="font-size: 14px; color: #999">concurrent</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/google-test-blog-translation/" style="font-size: 14px; color: #999">google_test_blog_translation</a> <a href="/tags/interview/" style="font-size: 14px; color: #999">interview</a> <a href="/tags/java/" style="font-size: 21.5px; color: #666">java</a> <a href="/tags/junit/" style="font-size: 14px; color: #999">junit</a> <a href="/tags/justdoit/" style="font-size: 14px; color: #999">justdoit</a> <a href="/tags/ops/" style="font-size: 14px; color: #999">ops</a> <a href="/tags/patterns/" style="font-size: 24px; color: #555">patterns</a> <a href="/tags/performance/" style="font-size: 14px; color: #999">performance</a> <a href="/tags/productivity/" style="font-size: 16.5px; color: #888">productivity</a> <a href="/tags/python/" style="font-size: 16.5px; color: #888">python</a> <a href="/tags/real/" style="font-size: 21.5px; color: #666">real</a> <a href="/tags/testing/" style="font-size: 19px; color: #777">testing</a> <a href="/tags/think-different/" style="font-size: 16.5px; color: #888">think-different</a> <a href="/tags/thoughts/" style="font-size: 14px; color: #999">thoughts</a> <a href="/tags/tips/" style="font-size: 21.5px; color: #666">tips</a> <a href="/tags/ut/" style="font-size: 14px; color: #999">ut</a> <a href="/tags/word-frequency/" style="font-size: 14px; color: #999">word_frequency</a>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            
+
+
+
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:me@xaoxuu.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/xaoxuu"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>
+    本站使用
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    作为主题
+    
+      ，
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    。
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/search.js"></script>
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>

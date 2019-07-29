@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Tag: TDD | DIRTY HANDS QA</title>
+  
+  <meta name="keywords" content="Automation Testing,Performance Testing,Agile,Testing Tool Usage">
+  
+  
+  <meta name="description" content="Learning, Practice,And Never minded">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="msapplication-TileColor" content="#1BC3FB">
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/css/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover  half'>
+      
+        
+  <h1 class='title'>Material X</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header material">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="material"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          DIRTY HANDS QA
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogcategories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogtags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogarchives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/blog/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="blogarchives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+                
+                  rel="nofollow"
+                
+                
+                id="https:xaoxuu.comwikimaterial-x">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      
+<div class='l_main'>
+  
+    
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/07/27/productivity/1-Junit5CaseTestTemplate/">
+      Xmind,Test Cases,and Allure templates for TDD
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-07-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Xmind-TestCases-and-JUnit5-Allure-Template"><a href="#Xmind-TestCases-and-JUnit5-Allure-Template" class="headerlink" title="Xmind,TestCases and JUnit5 Allure Template"></a>Xmind,TestCases and JUnit5 Allure Template</h1><p>Learn from the requirements and write test cases are the common daily work of a tester.<br>Normally write the mind map as a guide of test cases(in internet it is enough), then<br>execute the test cases or write testing codes based on the xmind file(mind map).<br>But do you ever question about this process? It is productive enough? Is there any improvement?</p>
+<p>Let me give an example: I want to test a DateUtil functionality, it has several features, the mindmap like this:</p>
+<ol>
+<li><p>DateUtil Test Cases Mindmap:<br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/productivity/testcase_map.jpg" alt="img"></p>
+</li>
+<li><p>Then write test codes(your boss required you to write automation codes) using junit and allure:</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Epic</span>(<span class="string">"Hutool DateUtil Usage"</span>)</span><br><span class="line"><span class="meta">@Feature</span>(<span class="string">"Hutool DateUtil Simple Usage"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HutoolDateUtilsTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="meta">@DisplayName</span>(<span class="string">"DateUtil-Formatter-From Date"</span>)</span><br><span class="line">    <span class="meta">@Story</span>(value =<span class="string">"Formatter-From Date"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testFrom_Date</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//write testing codes</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="meta">@DisplayName</span>(<span class="string">"DateUtil-Formatter-From DateTime"</span>)</span><br><span class="line">    <span class="meta">@Story</span>(value =<span class="string">"Formatter-From DateTime"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testFrom_DateTime</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//write testing codes</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://docs.qameta.io/allure/#_junit_5" target="_blank" rel="noopener">allure</a> is a tool for unified test report. It is worth to use.<br>Two conceptions in allure mapping to requirments: </p>
+<ul>
+<li>EPIC: A big functionality,usally have several small featuers</li>
+<li>Feature: A relative small functionality, which might have one or more user stories</li>
+<li>User Story: a small/independent functionality</li>
+</ul>
+<p>Writing code is actually transforming the test cases into codes, and labeling the test codes by different test cases names.</p>
+<ol start="3">
+<li>Running the tests, the report is like:</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/productivity/allure_story_feature.jpg" alt="img"></p>
+<p>It is perfect! But don’t you think you write test cases twice? In <strong><em>xmind</em></strong>, and in <strong><em>code</em></strong> like <strong><em>@Story</em></strong> bla bla bla …..</p>
+<p>Why do I write the annotations like @Story,@Epic or @Feature? The answer is that I want to make a fancy report,but I actually did duplicated work, didn’t I?  Duplicate work have bad smell. In this case, it looks like you sacrifice your productivity to make report fancy. What if I want both fancy report and productivity? Is it possible to write once?  Scripting Boy thought there should be a way.</p>
+<h2 id="Become-a-scripting-boy-to-connect-these-dots"><a href="#Become-a-scripting-boy-to-connect-these-dots" class="headerlink" title="Become a scripting boy to connect these dots"></a>Become a scripting boy to connect these dots</h2><p>Actaully It is not that hard to find a way to achieve the goal: fancy report and productivity both.<br>Let me figure it out:</p>
+<ol>
+<li>Export to test cases in markdown format through xmind(xmind has java/python sdk to manupilate the xmind file, but it is too complex), export is in xmind menu <strong><em>file&gt;export&gt;text</em></strong>:</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/productivity/export_md.jpg" alt="img"></p>
+<p>BTW: importing md file to xmind is in ``file&gt;import&gt;text<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">The exported markdown file content:</span><br><span class="line"></span><br><span class="line">```sh</span><br><span class="line"># DateUtil</span><br><span class="line">## Functions</span><br><span class="line">### isSameDate</span><br><span class="line">### CurrentYear</span><br><span class="line">### CurrentMonth</span><br><span class="line">### CurrentDay</span><br></pre></td></tr></table></figure></p>
+<ol start="2">
+<li>Parse the markdown test cases, and render parsed test cases into testing code template<br>It is not hard, there are only three files, and less than 50 lines of codes:</li>
+</ol>
+<ul>
+<li><p>pom.xml for leveraging existing libs</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.jtwig&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;jtwig-core&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;5.87.0.RELEASE&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>a junit test code template file in class path(resources folder),named <strong><em>junit_allure_template.twig</em></strong></p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> io.qameta.allure.Epic;</span><br><span class="line"><span class="keyword">import</span> io.qameta.allure.Story;</span><br><span class="line"><span class="keyword">import</span> io.qameta.allure.Feature;</span><br><span class="line"><span class="keyword">import</span> org.junit.jupiter.api.Assertions;</span><br><span class="line"><span class="keyword">import</span> org.junit.jupiter.api.DisplayName;</span><br><span class="line"><span class="keyword">import</span> org.junit.jupiter.api.Test;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Epic</span>(<span class="string">"&#123;&#123;context.epic&#125;&#125;"</span>)</span><br><span class="line"><span class="meta">@Feature</span>(<span class="string">"&#123;&#123;context.epic&#125;&#125;"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> </span>&#123;&#123;context.epic&#125;&#125;Test &#123;</span><br><span class="line"></span><br><span class="line">   &#123;% <span class="keyword">for</span> entry in context.features.entrySet() %&#125;</span><br><span class="line">    &#123;% <span class="keyword">for</span> feature in entry.value() %&#125;</span><br><span class="line">        <span class="meta">@Test</span></span><br><span class="line">        <span class="meta">@DisplayName</span>(<span class="string">"&#123;&#123;context.epic&#125;&#125;-&#123;&#123;feature.desc&#125;&#125;"</span>)</span><br><span class="line">        <span class="meta">@Story</span>(value =<span class="string">"&#123;&#123;feature.desc&#125;&#125;"</span> )</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> test&#123;&#123;feature.name&#125;&#125;()&#123;</span><br><span class="line">            <span class="comment">//write testing codes</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">   &#123;% endfor %&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>50 lines of codes, to read the exported markdown file, and render the template <strong><em>junit_allure_template.twig</em></strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Junit5TestTemplateGenerator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">generateJunit5TC</span><span class="params">(String mdFile,String fileName)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        AllureTestModel allureTestModel = <span class="keyword">new</span> AllureTestModel();</span><br><span class="line">        List&lt;String&gt; mdContent= Resources.readLines(Resources.getResource(mdFile),Charsets.UTF_8);</span><br><span class="line"></span><br><span class="line">        String currentFeature=<span class="string">""</span>;</span><br><span class="line">        <span class="keyword">for</span> (String line : mdContent) &#123;</span><br><span class="line">            <span class="keyword">if</span>(line.startsWith(<span class="string">"###"</span>))&#123;</span><br><span class="line">                AllureFeature feature = <span class="keyword">new</span> AllureFeature();</span><br><span class="line">                feature.setDesc(currentFeature+<span class="string">"-"</span>+line.replace(<span class="string">"###"</span>,<span class="string">""</span>).trim());</span><br><span class="line">                feature.setName(line.replace(<span class="string">"###"</span>,<span class="string">""</span>).trim().replace(<span class="string">" "</span>,<span class="string">"_"</span>));</span><br><span class="line">                allureTestModel.features.get(currentFeature).add(feature);</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(line.startsWith(<span class="string">"##"</span>))&#123;</span><br><span class="line">                currentFeature = line.replace(<span class="string">"##"</span>,<span class="string">""</span>).trim();</span><br><span class="line">                allureTestModel.features.putIfAbsent(currentFeature,<span class="keyword">new</span> ArrayList&lt;&gt;());</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(line.startsWith(<span class="string">"#"</span>))&#123;</span><br><span class="line">                allureTestModel.setEpic(line.replace(<span class="string">"#"</span>,<span class="string">""</span>).trim());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        JtwigTemplate template = JtwigTemplate.classpathTemplate(<span class="string">"junit_allure_template.twig"</span>);</span><br><span class="line">        JtwigModel model = JtwigModel.newModel().with(<span class="string">"context"</span>,allureTestModel);</span><br><span class="line">        template.render(model,<span class="keyword">new</span> FileOutputStream(<span class="keyword">new</span> File(fileName+<span class="string">".java"</span>)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Data</span></span><br><span class="line">     <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">AllureTestModel</span></span>&#123;</span><br><span class="line">        <span class="keyword">private</span> String epic;</span><br><span class="line">        <span class="keyword">private</span> Map&lt;String,List&lt;AllureFeature&gt;&gt; features = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Data</span></span><br><span class="line">     <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">AllureFeature</span></span>&#123;</span><br><span class="line">        <span class="keyword">private</span> String name;</span><br><span class="line">        <span class="keyword">private</span> String desc;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        Junit5TestTemplateGenerator.generateJunit5TC(<span class="string">"DateUtil.md"</span>,<span class="string">"HutoolDateUtilTest.java"</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>And the result is:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Epic</span>(<span class="string">"Hutool DateUtil Usage"</span>)</span><br><span class="line"><span class="meta">@Feature</span>(<span class="string">"Hutool DateUtil Simple Usage"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HutoolDateUtilsTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="meta">@DisplayName</span>(<span class="string">"DateUtil-Formatter-From Date"</span>)</span><br><span class="line">    <span class="meta">@Story</span>(value =<span class="string">"Formatter-From Date"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testFrom_Date</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//write testing codes</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="meta">@DisplayName</span>(<span class="string">"DateUtil-Formatter-From DateTime"</span>)</span><br><span class="line">    <span class="meta">@Story</span>(value =<span class="string">"Formatter-From DateTime"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testFrom_DateTime</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//write testing codes</span></span><br><span class="line">    &#125;</span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>which is same as your writing before.</p>
+<p>Scripting boy is not kidding you, use a JAVA template lib to make both fancy report and test cases real without<br>duplicated work. </p>
+<p>detail codes, please refer <a href="https://github.com/allroundtesters/x-tests/tree/master/tester-allinone/xtests-toolkits/markdowns" target="_blank" rel="noopener">junit5 code render</a></p>
+<p>It is not perfect solution which I need to admit. But it works somehow, and save my time anyway.<br>It also demostrated that there are plenty opportunities to tester to practice coding skills,<br>to know a little bit more about other libaries. It is not about rocket science, not about make a fancy product, it is just about practicing day in and day out to make life a little bit easier than before. </p>
+<h2 id="What’s-next"><a href="#What’s-next" class="headerlink" title="What’s next?"></a>What’s next?</h2><p>It looks good, not why not write it as a plugin of a modern ide like intellj IDEA. Wait, Wait, I am a scripting boy, try to<br>make a product?  But Why not? And why not support more templates like testng or other testing framework?  See you next time!</p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/JAVA/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>JAVA</a>
+        
+          <a href="/tags/Automation/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Automation</a>
+        
+          <a href="/tags/TDD/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>TDD</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
+
+  
+
+
+    
+  
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+        
+          
+          
+            <section class='widget author'>
+  <div class='content material'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png'/>
+      </div>
+    
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:me@xaoxuu.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/xaoxuu"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=63035382"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            <section class='widget grid'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/API-Testing/" style="font-size: 19px; color: #777">API Testing</a> <a href="/tags/Automation/" style="font-size: 16.5px; color: #888">Automation</a> <a href="/tags/CI-CD/" style="font-size: 19px; color: #777">CI/CD</a> <a href="/tags/CICD/" style="font-size: 14px; color: #999">CICD</a> <a href="/tags/JAVA/" style="font-size: 14px; color: #999">JAVA</a> <a href="/tags/MAVEN/" style="font-size: 14px; color: #999">MAVEN</a> <a href="/tags/Notes/" style="font-size: 14px; color: #999">Notes</a> <a href="/tags/Performance/" style="font-size: 14px; color: #999">Performance</a> <a href="/tags/Project-Setup/" style="font-size: 14px; color: #999">Project Setup</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/TDD/" style="font-size: 14px; color: #999">TDD</a> <a href="/tags/ThinkInTesting/" style="font-size: 14px; color: #999">ThinkInTesting</a> <a href="/tags/ThreadDump/" style="font-size: 14px; color: #999">ThreadDump</a> <a href="/tags/Tip/" style="font-size: 14px; color: #999">Tip</a> <a href="/tags/agile-metrics/" style="font-size: 14px; color: #999">agile metrics</a> <a href="/tags/algorithm/" style="font-size: 14px; color: #999">algorithm</a> <a href="/tags/annaconda3/" style="font-size: 14px; color: #999">annaconda3</a> <a href="/tags/ansible/" style="font-size: 16.5px; color: #888">ansible</a> <a href="/tags/cheatsheet/" style="font-size: 14px; color: #999">cheatsheet</a> <a href="/tags/concurrent/" style="font-size: 14px; color: #999">concurrent</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/google-test-blog-translation/" style="font-size: 14px; color: #999">google_test_blog_translation</a> <a href="/tags/interview/" style="font-size: 14px; color: #999">interview</a> <a href="/tags/java/" style="font-size: 21.5px; color: #666">java</a> <a href="/tags/junit/" style="font-size: 14px; color: #999">junit</a> <a href="/tags/justdoit/" style="font-size: 14px; color: #999">justdoit</a> <a href="/tags/ops/" style="font-size: 14px; color: #999">ops</a> <a href="/tags/patterns/" style="font-size: 24px; color: #555">patterns</a> <a href="/tags/performance/" style="font-size: 14px; color: #999">performance</a> <a href="/tags/productivity/" style="font-size: 16.5px; color: #888">productivity</a> <a href="/tags/python/" style="font-size: 16.5px; color: #888">python</a> <a href="/tags/real/" style="font-size: 21.5px; color: #666">real</a> <a href="/tags/testing/" style="font-size: 19px; color: #777">testing</a> <a href="/tags/think-different/" style="font-size: 16.5px; color: #888">think-different</a> <a href="/tags/thoughts/" style="font-size: 14px; color: #999">thoughts</a> <a href="/tags/tips/" style="font-size: 21.5px; color: #666">tips</a> <a href="/tags/ut/" style="font-size: 14px; color: #999">ut</a> <a href="/tags/word-frequency/" style="font-size: 14px; color: #999">word_frequency</a>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            
+
+
+
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:me@xaoxuu.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/xaoxuu"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>
+    本站使用
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    作为主题
+    
+      ，
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    。
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/search.js"></script>
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>

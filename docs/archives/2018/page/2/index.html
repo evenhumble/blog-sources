@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Archives: 2018 | DIRTY HANDS QA</title>
+  
+  <meta name="keywords" content="Automation Testing,Performance Testing,Agile,Testing Tool Usage">
+  
+  
+  <meta name="description" content="Learning, Practice,And Never minded">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="msapplication-TileColor" content="#1BC3FB">
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/css/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover  half'>
+      
+        
+  <h1 class='title'>Material X</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header material">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="material"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          DIRTY HANDS QA
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogcategories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogtags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogarchives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/blog/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="blogarchives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+                
+                  rel="nofollow"
+                
+                
+                id="https:xaoxuu.comwikimaterial-x">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+	
+		
+  <section class="post-list">
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2018/07/01/2-Github-Travis/">
+      Travis - GithubToolChain-1
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-07-01</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Github工具系列-Travis"><a href="#Github工具系列-Travis" class="headerlink" title="Github工具系列-Travis"></a>Github工具系列-Travis</h1><p>Travis 是一个持续集成工具，github上的每一次提交都可以触发一次build. 在说Travis之前，先说说持续集成，Continuous Integration(CI)的概念。</p>
+<p><a href="https://martinfowler.com/articles/continuousIntegration.html" target="_blank" rel="noopener">CI</a> 这是martin flow关于持续集成的一片文章。CI简而言之就是一个开发的方式，这个方式有别于瀑布式开发中在所有功能(大量代码)完成之后才进行验证，他提倡通过不停的提交一个个小功能(代码2量不那么大)进行验证。很显然采用这种开发方式，会带来频繁的build和test，因此也催生了Jenkins等持续集成的工具。Travis也是这种工具，和Jenkins不同的是，Travis更像一种云服务，不需要你在本地部署。</p>
+<p>回到CI这个话题，为什么要采用CI这个方式呢？他有什么好处呢？CI的好处是：</p>
+<p>···<br>通过不停的build,test可以对功能，代码获取快速的反馈，进行快速的修复，因此项目的进度实际上是非常稳定的，出现在产品开发完之后，产品，需求方向出现错误会尽可能的避免<br>···</p>
+<p>从目前来看，国内很多公司大都采用了CI的方式，大型一些的公司每天都有成千上万的build，test在自动化的进行，没有一个工具来做这些的话，可以想象成本会有多高，也就无从谈起或者实施CI了。有一点比较佩服老外，他们如果觉得方向是正确的，就会想办法通过工具或者其他手段来实现，软件行业的各种思想，大部分都是老外提出的。(critical thinking这个方面也是我自己要好好提高的）</p>
+<h2 id="Run-Travis"><a href="#Run-Travis" class="headerlink" title="Run Travis"></a>Run Travis</h2><p>.travis.yml file for JAVA</p>
+<h2 id="travis-yml-detail"><a href="#travis-yml-detail" class="headerlink" title=".travis,yml detail"></a>.travis,yml detail</h2><p><a href="https://docs.travis-ci.com/user/for-beginners/" target="_blank" rel="noopener">reference</a></p>
+<ul>
+<li>Building,testing,deployment</li>
+<li>Builds,Jobs,Stages and Phases <ul>
+<li>phases, sequential steps of a jab</li>
+<li>build, a group of jobs</li>
+<li>job, serveral phases</li>
+<li>stage</li>
+</ul>
+</li>
+<li>travis phases:<ul>
+<li>before_install</li>
+<li>install</li>
+<li>before_script</li>
+<li>script</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/CI-CD/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>CI/CD</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2018/07/01/1-CleanlyTestData/">
+      马桶测试-1： 创建干净的测试数据
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-07-01</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="马桶测试-1：-创建干净的测试数据"><a href="#马桶测试-1：-创建干净的测试数据" class="headerlink" title="马桶测试-1： 创建干净的测试数据"></a>马桶测试-1： 创建干净的测试数据</h1><p>Google Testing on the Toilet Series 翻译第一篇,创建干净的测试数据</p>
+<p>原文 <a href="https://testing.googleblog.com/2018/02/testing-on-toilet-cleanly-create-test.html" target="_blank" rel="noopener">Origin Testing on the Toilet: Cleanly Create Test Data</a></p>
+<p>Helper方法让创建数据非常方便，但是随着时间的推移，不同的变量数据创建方法加入之后，代码可读性变得不那么好了.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This helper method starts with just a single parameter:</span></span><br><span class="line">Company company = newCompany(PUBLIC);</span><br><span class="line"></span><br><span class="line"><span class="comment">// But soon it acquires more and more parameters.</span></span><br><span class="line"><span class="comment">// Conditionals creep into the newCompany() method body to handle the nulls,</span></span><br><span class="line"><span class="comment">// and the method calls become hard to read due to the long parameter lists:</span></span><br><span class="line">Company small = newCompany(<span class="number">2</span>, <span class="number">2</span>, <span class="keyword">null</span>, PUBLIC);</span><br><span class="line">Company privatelyOwned = newCompany(<span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, PRIVATE);</span><br><span class="line">Company bankrupt = newCompany(<span class="keyword">null</span>, <span class="keyword">null</span>, PAST_DATE, PUBLIC);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Or a new method is added each time a test needs a different combination of fields:</span></span><br><span class="line">Company small = newCompanyWithEmployeesAndBoardMembers(<span class="number">2</span>, <span class="number">2</span>, PUBLIC);</span><br><span class="line">Company privatelyOwned = newCompanyWithType(PRIVATE);</span><br><span class="line">Company bankrupt = newCompanyWithBankruptcyDate(PAST_DATE, PUBLIC);</span><br></pre></td></tr></table></figure>
+
+<p>为了让测试数据代码更据可读性，使用builder pattern，通过返回部分数据的builder类来创建数据，修改不同的状态是一个不错的方法。 创建数据的方法可以生成部分的默认数据，之后再修改需要修改的数据，可以让测试代码方便而且容易阅读，如下例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Company small = newCompany().setEmployees(<span class="number">2</span>).setBoardMembers(<span class="number">2</span>).build();</span><br><span class="line">Company privatelyOwned = newCompany().setType(PRIVATE).build();</span><br><span class="line">Company bankrupt = newCompany().setBankruptcyDate(PAST_DATE).build();</span><br><span class="line">Company arbitraryCompany = newCompany().build();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Zero parameters makes this method reusable for different variations of Company.</span></span><br><span class="line"><span class="comment">// It also doesn’t need conditionals to ignore parameters that aren’t set (e.g. null</span></span><br><span class="line"><span class="comment">// values) since a test can simply not set a field if it doesn’t care about it.</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Company.<span class="function">Builder <span class="title">newCompany</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> Company.newBuilder().setType(PUBLIC).setEmployees(<span class="number">100</span>); <span class="comment">// Set required fields</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>同时测试不应该以来任何的默认值，如果有依赖就让使用者必须去了解具体的创建数据方法的实现了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This test needs a public company, so explicitly set it.</span></span><br><span class="line"><span class="comment">// It also needs a company with no board members, so explicitly clear it.</span></span><br><span class="line">Company publicNoBoardMembers = newCompany().setType(PUBLIC).clearBoardMembers().build();</span><br></pre></td></tr></table></figure>
+
+<p>更多详细信息可以参考：<a href="http://www.natpryce.com/articles/000714.html" target="_blank" rel="noopener">http://www.natpryce.com/articles/000714.html</a></p>
+<h2 id="附上原文："><a href="#附上原文：" class="headerlink" title="附上原文："></a>附上原文：</h2><p>This article was adapted from a Google Testing on the Toilet (TotT) episode. You can download a printer-friendly version of this TotT episode and post it in your office.<br>By Ben Yu<br>Helper methods make it easier to create test data. But they can become difficult to read over time as you need more variations of the test data to satisfy constantly evolving requirements from new tests:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This helper method starts with just a single parameter:</span></span><br><span class="line">Company company = newCompany(PUBLIC);</span><br><span class="line"></span><br><span class="line"><span class="comment">// But soon it acquires more and more parameters.</span></span><br><span class="line"><span class="comment">// Conditionals creep into the newCompany() method body to handle the nulls,</span></span><br><span class="line"><span class="comment">// and the method calls become hard to read due to the long parameter lists:</span></span><br><span class="line">Company small = newCompany(<span class="number">2</span>, <span class="number">2</span>, <span class="keyword">null</span>, PUBLIC);</span><br><span class="line">Company privatelyOwned = newCompany(<span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, PRIVATE);</span><br><span class="line">Company bankrupt = newCompany(<span class="keyword">null</span>, <span class="keyword">null</span>, PAST_DATE, PUBLIC);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Or a new method is added each time a test needs a different combination of fields:</span></span><br><span class="line">Company small = newCompanyWithEmployeesAndBoardMembers(<span class="number">2</span>, <span class="number">2</span>, PUBLIC);</span><br><span class="line">Company privatelyOwned = newCompanyWithType(PRIVATE);</span><br><span class="line">Company bankrupt = newCompanyWithBankruptcyDate(PAST_DATE, PUBLIC);</span><br></pre></td></tr></table></figure>
+
+<p>Instead, use the test data builder pattern: create a helper method that returns a partially-built object (e.g., a Builder in languages such as Java, or a mutable object) whose state can be overridden in tests. The helper method initializes logically-required fields to reasonable defaults, so each test can specify only fields relevant to the case being tested:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Company small = newCompany().setEmployees(<span class="number">2</span>).setBoardMembers(<span class="number">2</span>).build();</span><br><span class="line">Company privatelyOwned = newCompany().setType(PRIVATE).build();</span><br><span class="line">Company bankrupt = newCompany().setBankruptcyDate(PAST_DATE).build();</span><br><span class="line">Company arbitraryCompany = newCompany().build();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Zero parameters makes this method reusable for different variations of Company.</span></span><br><span class="line"><span class="comment">// It also doesn’t need conditionals to ignore parameters that aren’t set (e.g. null</span></span><br><span class="line"><span class="comment">// values) since a test can simply not set a field if it doesn’t care about it.</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Company.<span class="function">Builder <span class="title">newCompany</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> Company.newBuilder().setType(PUBLIC).setEmployees(<span class="number">100</span>); <span class="comment">// Set required fields</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Also note that tests should never rely on default values that are specified by a helper method since that forces readers to read the helper method’s implementation details in order to understand the test.<br>// This test needs a public company, so explicitly set it.<br>// It also needs a company with no board members, so explicitly clear it.<br>Company publicNoBoardMembers = newCompany().setType(PUBLIC).clearBoardMembers().build();<br>You can learn more about this topic at <a href="http://www.natpryce.com/articles/000714.html" target="_blank" rel="noopener">http://www.natpryce.com/articles/000714.html</a></p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/google-test-blog-translation/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>google_test_blog_translation</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2018/07/01/2-CleanCode/">
+      Clean Code Reading Note
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-07-01</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Clean-Code-The-Art-of-Readable-Code-Reading-Notes"><a href="#Clean-Code-The-Art-of-Readable-Code-Reading-Notes" class="headerlink" title="Clean Code/The Art of Readable Code Reading Notes"></a>Clean Code/The Art of Readable Code Reading Notes</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">知易行难</span><br><span class="line">理念可能都有，那么怎么做呢？</span><br></pre></td></tr></table></figure>
+
+<p>匆匆看过两本书，两本书提供了一些如何写好代码的纲领，当时很明显真要写好不是读完两本书就可以的。多练，多思考才可以。两本书有不少比较相似的内容，所以很明显这些相似的内容就是日常需要关注的地方，不管是注释，方法命名，变量命名，重构这些都是日常工作中时刻注意的。</p>
+<p>Clean Code和The Art of Readable Code看完对于我来说，更多的是对于作者面面俱到细节的描述惊讶，居然有人能把这些琐碎的事情说的这么完整和逻辑感十足。可以说健壮的代码关于细节的处理是相当的繁琐，把繁琐的事情写成Clean Code不是一件容易事情，我们不缺理念，我们缺的是细节，谁都说我要写漂亮整齐的代码，然后怎么做到呢？我们抱怨别人的代码混乱，但是我们重写真的可以写的刚好吗？如果我们想写的好，那要如何去做呢？这本书给出了一些答案，而这些就是我学习的要点。</p>
+<h2 id="Clean-Code-chapter-1介绍"><a href="#Clean-Code-chapter-1介绍" class="headerlink" title="Clean Code-chapter 1介绍"></a>Clean Code-chapter 1介绍</h2><p>这个章节讲述了几个关于混乱代码的伤害(实际上是关于公司/产品的生存问题)，引用了不同技术大牛对于Clean Code的一些看法同时引出下面作者要写的关于Clean code的内容。大多数大牛们的说法都比价抽象，所以能记住的不多，下面是个印象比较的说法：</p>
+<ul>
+<li><figure class="highlight plain"><figcaption><span>Equals Never```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">- 没有测试代码，就没有Clean Code(当然是TDD派)</span><br><span class="line">- 没有重复代码，可读性好，小块代码</span><br><span class="line">- 童子军军规：让营地比你来的时更干净，一点点清理，一点点消除，慢慢变成clean code</span><br><span class="line">- 读代码：写代码=10:1，读远远超过写，为什么需要Clean Code了？</span><br><span class="line"></span><br><span class="line">## Clean Code 的一些基本常识</span><br><span class="line"></span><br><span class="line">- 起名字的艺术，有意义的名字，变量，函数，参数，类，包等等</span><br><span class="line">   * 名副其实</span><br><span class="line">   * 避免误导，缩写/拼硬真的都知道吗</span><br><span class="line">   * 有意义的区分</span><br><span class="line">   ```java</span><br><span class="line">    copy(int[] a1,int a2[])</span><br><span class="line">    //不如</span><br><span class="line">    copy(int[] source,int[] dest)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>读的出来的名字</li>
+<li>每个概念对应一个词，在一个应用中保持一致</li>
+<li>使用已有解决方案领域的名称，比如遵循常用Design-pattern中的名称</li>
+<li>使用业务领域中名称</li>
+<li>添加有意义的语境名称，不使用无意义的语境名称</li>
+</ul>
+</li>
+<li><p>函数</p>
+<ul>
+<li>函数名称，描述性，动词和关键字</li>
+<li>函数变量，参数名称尽量有意义，数量尽量小于3个，善用可变参数</li>
+<li>短小尤其是高层的函数，尽量有意义的函数组合而成(&lt;3000 行)</li>
+<li>只做一件事情</li>
+<li>少用switch</li>
+<li>无副作用，比如调用有前提条件，需要注意如何更优雅的处理</li>
+<li>setIfExist</li>
+<li>Exception 替代返回错误代码</li>
+<li>抽离try/catch的代码</li>
+<li>DRY:Don’t Repeat Yourself</li>
+<li>一个入口一个出口(一个return)</li>
+</ul>
+</li>
+<li><p>注释</p>
+<ul>
+<li>法律信息</li>
+<li>代码就是注释，给变量，函数起个好名字胜过很多注释</li>
+<li>提供信息的注释，避免无意义或者和代码不同步的注释</li>
+<li>警示，提醒可能修改时遇到问题</li>
+<li>TODO</li>
+<li>放大某种看来不合理的问题，说明trade-off的情况或者特别处理的意义</li>
+<li>修改的日志，修改的comments</li>
+</ul>
+</li>
+<li><p>格式<br>格式是没有太多好说的，或许用一个stylecheck的工具更为好.</p>
+</li>
+<li><p>对象和数据结构</p>
+<ul>
+<li>模块不应该了解它内部的对象情形</li>
+<li>DTO 通信/ActiveRecord-find/search， 这些是数据结构，不要有业务逻辑</li>
+<li>对象暴露行为，隐藏数据/数据结构暴露数据，不要有明显的行为</li>
+</ul>
+</li>
+<li><p>异常处理</p>
+<ul>
+<li>异常而非返回码</li>
+<li>使用Runtime Exception</li>
+<li>异常信息</li>
+<li>定义常规流程，不要返回NULL</li>
+</ul>
+</li>
+<li><p>单元测试</p>
+<ul>
+<li>TDD，测试代码和业务代码，保持测试代码整齐(让人可以维护)</li>
+<li>测试代码可读性，确保一致可以延续下去和业务保持同步(code-review,如何解决代码量打得大的问题)</li>
+<li>DSL Domain测试语言</li>
+<li>FIRST: Fast/Independent/Repeatable/Self-Validating/Timely</li>
+</ul>
+</li>
+<li><p>类</p>
+<ul>
+<li>短小，SRP</li>
+<li>接口隔离/隔离修改</li>
+<li>DIP</li>
+</ul>
+</li>
+<li><p>系统</p>
+<ul>
+<li>DIP</li>
+<li>工厂方法</li>
+<li>scale out</li>
+<li>JDK代理/Proxy invocation handler/AOP/AspectJ</li>
+</ul>
+</li>
+<li><p>迭代</p>
+<ul>
+<li>Run all the tests</li>
+<li>Refactor</li>
+</ul>
+</li>
+<li><p>Concurrence</p>
+<ul>
+<li>并发防御： SRP，Immutable Data,数据副本</li>
+<li>ReentrantLock/Sempaphore/CoundDownLatch</li>
+<li>执行模型</li>
+</ul>
+<p>|互斥|每一个时刻只有一个线程访问共享数据和资源|<br>|线程饥饿|比如总是执行快的线程执行|<br>|死锁|两个或者多个线程相互等待|<br>|活锁|执行次序一致的线程|</p>
+<ul>
+<li>producer-consumer</li>
+<li>reader-writer</li>
+<li>保持同步区域微小</li>
+<li>关闭资源</li>
+<li>测试线程代码/注意偶发时间(design for failure)</li>
+<li>多平台/多处理器</li>
+<li>stub codes/yield??</li>
+</ul>
+</li>
+<li><p>逐步改进</p>
+<ul>
+<li>work first</li>
+<li>一步一步Refactor，from one big method to well-orgainized</li>
+<li>unit testing for refactor</li>
+</ul>
+</li>
+<li><p>味道和启发，需要细读</p>
+<ul>
+<li>移除不必要的注释</li>
+<li>函数参数不要过多，移除没有使用的函数</li>
+<li>extract重复代码</li>
+<li>测试不足，使用覆盖率工具，忽律的测试是不确定的，边界条件</li>
+<li>缺陷扎堆</li>
+</ul>
+</li>
+</ul>
+<h2 id="The-Art-of-Readable-Code"><a href="#The-Art-of-Readable-Code" class="headerlink" title="The Art of Readable Code"></a>The Art of Readable Code</h2><h3 id="表面层次的改进"><a href="#表面层次的改进" class="headerlink" title="表面层次的改进"></a>表面层次的改进</h3><ul>
+<li>naming，变量，函数，参数，类，包命名，有意义不含糊，特定，和业务领域命名一致</li>
+<li>注释，简单，实例，描述为什么这样的理由，todo，站在读者的立场</li>
+</ul>
+<h3 id="简化循环和逻辑"><a href="#简化循环和逻辑" class="headerlink" title="简化循环和逻辑"></a>简化循环和逻辑</h3><ul>
+<li>if/esle的考量，正逻辑还是负逻辑更好理解</li>
+<li>避免do/while</li>
+<li>提前返回</li>
+<li>最小嵌套</li>
+<li>拆分巨大的语句</li>
+<li>变量命名，缩小变量作用域</li>
+</ul>
+<h3 id="重新组织代码"><a href="#重新组织代码" class="headerlink" title="重新组织代码"></a>重新组织代码</h3><ul>
+<li>抽取不想关的子逻到工具类或者其他相关领域</li>
+<li>小函数也不需要太多</li>
+<li>一次只做一件事情，通过组合函数或者类来解决大问题</li>
+</ul>
+<h3 id="想法变成代码"><a href="#想法变成代码" class="headerlink" title="想法变成代码"></a>想法变成代码</h3><p>使用自然语言程序描述功能，描述解决问题的流程</p>
+<h2 id="少些代码"><a href="#少些代码" class="headerlink" title="少些代码"></a>少些代码</h2><ul>
+<li>少量代码解决最重要的问题，介绍需求</li>
+<li>使用现有工具，unix tools/现有代码</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat *.log | awk `&#123;print $5 &quot; &quot; $7&#125;` | egrep &quot;[45]..$&quot; \</span><br><span class="line">| sort | uniq -c | sort -nr</span><br></pre></td></tr></table></figure>
+
+<h2 id="精选话题"><a href="#精选话题" class="headerlink" title="精选话题"></a>精选话题</h2><ul>
+<li>测试可读性</li>
+<li>详细的错误信息</li>
+<li>测试函数命名</li>
+<li>可测性衡量-Hard<ul>
+<li>全局变量</li>
+<li>外部组件大量依赖代码</li>
+<li>代码不确定行为</li>
+</ul>
+</li>
+<li>可测性衡量-好<ul>
+<li>内部状态很少</li>
+<li>类函数只做一件事情</li>
+<li>依赖很少，可管理</li>
+<li>函数接口简单</li>
+</ul>
+</li>
+<li>测试代码需要描述清楚测试的功能，高层定义越简单越好</li>
+</ul>
+<h3 id="深入阅读推荐"><a href="#深入阅读推荐" class="headerlink" title="深入阅读推荐"></a>深入阅读推荐</h3><ul>
+<li>Code Complete</li>
+<li>Refactoring</li>
+<li>The Pragmatic Programer</li>
+<li>Javascript - The Good Parts</li>
+<li>Effective Java</li>
+<li>Design-Pattern: Elements of Reusable Object-Oriented Software</li>
+<li>Programming Pearls</li>
+<li><a href="http://www.joeonsoftware.com" target="_blank" rel="noopener">Joel on Software</a></li>
+<li>Donald E.Knuth books </li>
+</ul>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/Notes/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Notes</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2018/06/29/how-to-read-a-thread-dump/">
+      How To Read A Thread Dump
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-06-29</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="How-To-Read-A-Thread-Dump"><a href="#How-To-Read-A-Thread-Dump" class="headerlink" title="How To Read A Thread Dump"></a>How To Read A Thread Dump</h1><ul>
+<li>Thread Terminology</li>
+</ul>
+<h2 id="Thread-Terminology"><a href="#Thread-Terminology" class="headerlink" title="Thread Terminology"></a>Thread Terminology</h2><ul>
+<li><p>Thread/daemon Thread,</p>
+<ul>
+<li>thread is discrete unit of concurrency managed by JVM</li>
+<li>daemon thread: runs independent of other threads, killed when Runtime.exit</li>
+</ul>
+</li>
+<li><p>Different state Threads</p>
+<ul>
+<li>Alive thread - A running thread taht is performance some work</li>
+<li>Blocked thread - attempt to enter synchronized block blocked by another thread</li>
+<li>Waiting Thread - waiting for another thread to call</li>
+<li>Sleep Thread - not executing because sleep is called</li>
+</ul>
+</li>
+<li><p>Monitor</p>
+<ul>
+<li><a href="https://docs.oracle.com/javase/specs/jls/se10/html/jls-17.html#jls-17.1" target="_blank" rel="noopener">reference</a></li>
+</ul>
+</li>
+<li><p>Deadlock</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dining_philosophers_problem" target="_blank" rel="noopener">reference</a><br><img src="https://dzone.com/storage/temp/9523858-deadlock-definition.png" alt="img"><br><img src="https://dzone.com/storage/temp/9523858-deadlock-definition.png" alt="img"></li>
+</ul>
+<ul>
+<li>Livelock</li>
+</ul>
+<ul>
+<li>Thread A performs and action that causes thread B to perform an action</li>
+<li>Thread A still alive</li>
+<li><a href="https://docs.oracle.com/javase/specs/jls/se10/html/jls-17.html" target="_blank" rel="noopener">Reference</a></li>
+</ul>
+</li>
+<li><p>some ref:</p>
+<ul>
+<li><a href="https://dzone.com/articles/how-to-read-a-thread-dump" target="_blank" rel="noopener">reference</a></li>
+<li><a href="https://dzone.com/articles/how-analyze-java-thread-dumps" target="_blank" rel="noopener">r2</a></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/ThreadDump/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>ThreadDump</a>
+        
+          <a href="/tags/Performance/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Performance</a>
+        
+          <a href="/tags/Tip/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Tip</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2018/06/09/0-maven-in-30-minutes/">
+      MAVEN In 30 Minutes
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-06-09</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h2 id="1-MAVEN-Projects"><a href="#1-MAVEN-Projects" class="headerlink" title="1- MAVEN Projects"></a>1- MAVEN Projects</h2><ul>
+<li>use pom.xml to describe the project dependencies,such as third party jars used</li>
+<li>use pom.xml to describe the build process,such as using build plugin to achieve specific building process</li>
+<li>use pom.xml to manage multiple projects/modules, modules are in pom.xml, modules section</li>
+<li>a lot other stuff……</li>
+</ul>
+<h2 id="2-MAVEN-Artifact-Vector"><a href="#2-MAVEN-Artifact-Vector" class="headerlink" title="2- MAVEN Artifact Vector"></a>2- MAVEN Artifact Vector</h2><p>MAVEN Project produces an element, JAR,WAR or EAR, uniquely identified by a composite of fields known as groupId,artificatId,packing,version and scope. This vector of fields uniquely distinguishes a MAVEN artifact from all others.</p>
+<p>the samples as follow:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupid:artifactid:packaging:version:scope</span><br><span class="line">org.springframework:spring:jar:4.3.2:compile</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-MAVEN-Lifecycles"><a href="#3-MAVEN-Lifecycles" class="headerlink" title="3- MAVEN Lifecycles"></a>3- MAVEN Lifecycles</h2><p>Phases,Plugins and Goals</p>
+<p><img src="/images/cicd/maven_lifecycle.jpg" alt="img"></p>
+<ul>
+<li>Build-in Maven Default Lifecycles:</li>
+</ul>
+<p><img src="/images/cicd/maven_default_cl_1.jpg" alt="img"><br><img src="/images/cicd/maven_default_cl_2.jpg" alt="img"></p>
+<ul>
+<li>Site lifecycle</li>
+</ul>
+<p><img src="/images/cicd/maven_cl_site.jpg" alt="img"></p>
+<h2 id="4-Maven-Help"><a href="#4-Maven-Help" class="headerlink" title="4- Maven Help"></a>4- Maven Help</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span>: describe -Dplugin=&lt;plugnName&gt;</span><br><span class="line">mvn <span class="built_in">help</span>:effective-pom</span><br><span class="line">mvn <span class="built_in">help</span>:active-profiles</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-MAVEN-Dependency"><a href="#5-MAVEN-Dependency" class="headerlink" title="5- MAVEN Dependency"></a>5- MAVEN Dependency</h2><ul>
+<li>declaring dependencies</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span> <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.yourcompany<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span> <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>yourlib<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span> <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span> <span class="tag">&lt;<span class="name">type</span>&gt;</span>jar<span class="tag">&lt;/<span class="name">type</span>&gt;</span> <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>declaring plugins</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">plugin</span>&gt;</span> <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span> <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span> <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maxmem</span>&gt;</span>512m<span class="tag">&lt;/<span class="name">maxmem</span>&gt;</span> <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="6-Maven-Scope"><a href="#6-Maven-Scope" class="headerlink" title="6- Maven Scope"></a>6- Maven Scope</h2><p>scope in dependency:</p>
+<p><img src="/images/cicd/maven_scope.jpg" alt="img"></p>
+<h2 id="7-Learning-Dependencies"><a href="#7-Learning-Dependencies" class="headerlink" title="7- Learning Dependencies"></a>7- Learning Dependencies</h2><p>To Understand the dependencies for whole project,you can use following commands:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mvn dependency:tree</span><br><span class="line">mvn dependency:resolve  <span class="comment">## sorted</span></span><br><span class="line">mvn dependency:resolve-plugins</span><br><span class="line">mvn dependency:analyze</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-Declaring-Repository"><a href="#8-Declaring-Repository" class="headerlink" title="8- Declaring Repository"></a>8- Declaring Repository</h2><p>Repository is somewhere you can get the jars/wars</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">repositories</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>JavaDotNetRepo<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven-repository.dev.java.net<span class="tag">&lt;/<span class="name">url</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="9-Maven-Properties"><a href="#9-Maven-Properties" class="headerlink" title="9- Maven Properties"></a>9- Maven Properties</h2><ul>
+<li><p>Prefefined Properties<br><img src="/images/cicd/maven_predefined_prop.jpg" alt="img"></p>
+</li>
+<li><p>self defined properties</p>
+</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">my.somevar</span>&gt;</span>My Value<span class="tag">&lt;/<span class="name">my.somevar</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="10-Maven-Debug"><a href="#10-Maven-Debug" class="headerlink" title="10- Maven Debug"></a>10- Maven Debug</h2><p>commands for debug:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mvn -e <span class="comment"># stacktrace</span></span><br><span class="line">mvn -X <span class="comment">#</span></span><br><span class="line">mvnDebug &lt;projectName&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-Maven-Profile-activation"><a href="#11-Maven-Profile-activation" class="headerlink" title="11- Maven Profile activation"></a>11- Maven Profile activation</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -P profileName</span><br></pre></td></tr></table></figure>
+
+<p>profile setting:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">profiles</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>YourProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span> [...settings, build, etc...] </span><br><span class="line">        <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">os</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Windows XP<span class="tag">&lt;/<span class="name">name</span>&gt;</span> <span class="tag">&lt;<span class="name">family</span>&gt;</span>Windows<span class="tag">&lt;/<span class="name">family</span>&gt;</span> <span class="tag">&lt;<span class="name">arch</span>&gt;</span>x86<span class="tag">&lt;/<span class="name">arch</span>&gt;</span> <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.2600<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">os</span>&gt;</span> <span class="tag">&lt;<span class="name">file</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">missing</span>&gt;</span>somefolder/somefile.txt<span class="tag">&lt;/<span class="name">missing</span>&gt;</span> <span class="tag">&lt;/<span class="name">file</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">activation</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>##12- Maven Release</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mvn release: repare</span><br><span class="line">mvn release: perform</span><br></pre></td></tr></table></figure>
+
+<h2 id="13-Maven-Reports"><a href="#13-Maven-Reports" class="headerlink" title="13- Maven Reports"></a>13- Maven Reports</h2><p>reports defined in reporting section, these reports could be coverage report, and any other reports.</p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/MAVEN/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>MAVEN</a>
+        
+          <a href="/tags/CI-CD/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>CI/CD</a>
+        
+          <a href="/tags/Project-Setup/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Project Setup</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2018/06/08/0-word-frequency/">
+      Word Frequency - Use JDK Methods
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-06-08</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h2 id="What-is-the-problem"><a href="#What-is-the-problem" class="headerlink" title="What is the problem"></a>What is the problem</h2><p>Be confidence to the JDK, in most case, it is enough to solve problem. Here is a case, an issue to solve:</p>
+<ul>
+<li>There are over 10000 files in a dir</li>
+<li>Try to find out the top 100 most frequency words in these files, estimate 10 millions words out there</li>
+<li>Try to use </li>
+</ul>
+<p>I didn’t sovle it in 40 mintues, the failure part is just think too much about the data structure and algorithm. I just did some investigation then, and find out actually JDK methods are enough.</p>
+<p>Here is my thought, and I think need to implement my own algorithm to solve, actually I am wrong, JDK is enough</p>
+<ul>
+<li>Read the files</li>
+<li>Put word and count to a concurrent map</li>
+<li>get the top 100 from the map</li>
+</ul>
+<p>Because I am a fraid the memory and other resource issue, but later I had my try, it looks like worked if only use JDK methods. Here comes my solution.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>First of all, I try to create 10000 files with some random string(word),all strings are less than 18 characters, the codes are :</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> String <span class="title">getSaltString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String SALTCHARS = <span class="string">"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"</span>;</span><br><span class="line">    StringBuilder salt = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    Random rnd = <span class="keyword">new</span> Random();</span><br><span class="line">    <span class="keyword">int</span> strLength = rnd.nextInt(<span class="number">10</span>);</span><br><span class="line">    <span class="keyword">if</span>(strLength&lt;=<span class="number">2</span>)&#123;</span><br><span class="line">      strLength =<span class="number">3</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (salt.length() &lt; strLength) &#123; <span class="comment">// length of the random string.</span></span><br><span class="line">      <span class="keyword">int</span> index = (<span class="keyword">int</span>) (rnd.nextFloat() * SALTCHARS.length());</span><br><span class="line">      salt.append(SALTCHARS.charAt(index));</span><br><span class="line">    &#125;</span><br><span class="line">    String saltStr = salt.toString();</span><br><span class="line">    <span class="keyword">return</span> saltStr;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> List&lt;String&gt; <span class="title">createRandomFile</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List&lt;String&gt; result = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) &#123;</span><br><span class="line">      List&lt;String&gt; listString = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">50</span>; j++) &#123;</span><br><span class="line"></span><br><span class="line">        listString.add(getSaltString());</span><br><span class="line">      &#125;</span><br><span class="line">      StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">      <span class="keyword">for</span> (String s : listString) &#123;</span><br><span class="line">        sb.append(<span class="string">" "</span>).append(s);</span><br><span class="line">      &#125;</span><br><span class="line">      result.add(sb.toString());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">createFile</span><span class="params">(<span class="keyword">int</span> i, List&lt;String&gt; values)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    Files.write(Paths.get(<span class="string">"tmp/"</span> + i), values);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">createFiles</span><span class="params">(<span class="keyword">int</span> fileNum)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; fileNum; i++) &#123;</span><br><span class="line">      createFile(i, createRandomFile());</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>then I tried use to read files and put words into frequency map,and here multiple threads are used</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">readAndPutTo</span><span class="params">(Path path)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">    List&lt;String&gt; lines = Files.readAllLines(path);</span><br><span class="line">    <span class="keyword">for</span> (String line : lines) &#123;</span><br><span class="line">      String[] words = line.split(<span class="string">"\\s+"</span>);</span><br><span class="line">      <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">        frenquncyMap.put(word, frenquncyMap.getOrDefault(word, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(args[])</span></span>&#123;</span><br><span class="line">ExecutorService es = Executors.newFixedThreadPool(<span class="number">30</span>);</span><br><span class="line">    System.out.println(Files.list(Paths.get(<span class="string">"tmp"</span>)).count());</span><br><span class="line">    Files.list(Paths.get(<span class="string">"tmp"</span>)).forEach(</span><br><span class="line">        path -&gt; &#123;</span><br><span class="line">          count.getAndIncrement();</span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">            readAndPutTo(path);</span><br><span class="line">          &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    );</span><br><span class="line">    System.out.println(<span class="string">"completed tasks: "</span>+count);</span><br><span class="line">    <span class="keyword">long</span> end = System.currentTimeMillis();</span><br><span class="line">    System.out.println(end - start);</span><br><span class="line">    es.shutdown();</span><br><span class="line">    System.out.println(es.awaitTermination(<span class="number">120</span>, TimeUnit.SECONDS);</span><br><span class="line">    System.out.println(System.currentTimeMillis() - start);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Use shutdown() to make sure every tasks are completed, and print the task count to check if all tasks had be invoked.</p>
+<p>At last use stream api to list top 100 work frequency.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">List result = frenquncyMap.entrySet().stream()</span><br><span class="line">    .sorted(Map.Entry.comparingByValue())</span><br><span class="line">    .limit(<span class="number">100</span>).collect(Collectors.toList());</span><br><span class="line">System.out.println(result);</span><br><span class="line">System.out.println(System.currentTimeMillis() - start);</span><br><span class="line"></span><br><span class="line">Files.delete(Paths.get(<span class="string">"tmp/"</span>));</span><br><span class="line">Files.createDirectories(Paths.get(<span class="string">"tmp/"</span>));</span><br></pre></td></tr></table></figure>
+
+<p>That’s it, let’s run and see what happened:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>Later I willl jump into JDK, to understand what the algorithm used in JDK. </p>
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/interview/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>interview</a>
+        
+          <a href="/tags/word-frequency/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>word_frequency</a>
+        
+          <a href="/tags/algorithm/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>algorithm</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2018/05/20/font-tips_May/">
+      font-tips
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-05-20</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p>Tips Here for change api.googlefont like site to an avaible site.</p>
+<h2 id="For-Font"><a href="#For-Font" class="headerlink" title="For Font"></a>For Font</h2><ul>
+<li><a href="https://fonts.lug.ustc.edu.cn/" target="_blank" rel="noopener">https://fonts.lug.ustc.edu.cn/</a></li>
+<li><a href="https://fonts.css.network/" target="_blank" rel="noopener">https://fonts.css.network/</a></li>
+</ul>
+<h2 id="Other-FrontEnd-Resources"><a href="#Other-FrontEnd-Resources" class="headerlink" title="Other FrontEnd Resources"></a>Other FrontEnd Resources</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">常用前端公共库</span><br><span class="line">https:<span class="comment">//cdn.css.net/ </span></span><br><span class="line"></span><br><span class="line">Google 公共库</span><br><span class="line">https:<span class="comment">//ajax.css.network/ </span></span><br><span class="line"></span><br><span class="line">Gravatar</span><br><span class="line">https:<span class="comment">//gravatar.css.network/ </span></span><br><span class="line"></span><br><span class="line">Google 字体库</span><br><span class="line">https:<span class="comment">//fonts.css.network/</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/tips/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>tips</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+      <br>
+      <div class="prev-next">
+        <div class="prev-next">
+          
+            <a class="prev" rel="prev" href="/archives/2018/">
+              <section class="post prev" >
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+              </section>
+            </a>
+          
+          <p class="current">
+            2 / 2
+          </p>
+          
+        </div>
+      </div>
+
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
+
+  
+
+
+	
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+        
+          
+          
+            <section class='widget author'>
+  <div class='content material'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png'/>
+      </div>
+    
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:me@xaoxuu.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/xaoxuu"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=63035382"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            <section class='widget grid'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/API-Testing/" style="font-size: 19px; color: #777">API Testing</a> <a href="/tags/Automation/" style="font-size: 16.5px; color: #888">Automation</a> <a href="/tags/CI-CD/" style="font-size: 19px; color: #777">CI/CD</a> <a href="/tags/CICD/" style="font-size: 14px; color: #999">CICD</a> <a href="/tags/JAVA/" style="font-size: 14px; color: #999">JAVA</a> <a href="/tags/MAVEN/" style="font-size: 14px; color: #999">MAVEN</a> <a href="/tags/Notes/" style="font-size: 14px; color: #999">Notes</a> <a href="/tags/Performance/" style="font-size: 14px; color: #999">Performance</a> <a href="/tags/Project-Setup/" style="font-size: 14px; color: #999">Project Setup</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/TDD/" style="font-size: 14px; color: #999">TDD</a> <a href="/tags/ThinkInTesting/" style="font-size: 14px; color: #999">ThinkInTesting</a> <a href="/tags/ThreadDump/" style="font-size: 14px; color: #999">ThreadDump</a> <a href="/tags/Tip/" style="font-size: 14px; color: #999">Tip</a> <a href="/tags/agile-metrics/" style="font-size: 14px; color: #999">agile metrics</a> <a href="/tags/algorithm/" style="font-size: 14px; color: #999">algorithm</a> <a href="/tags/annaconda3/" style="font-size: 14px; color: #999">annaconda3</a> <a href="/tags/ansible/" style="font-size: 16.5px; color: #888">ansible</a> <a href="/tags/cheatsheet/" style="font-size: 14px; color: #999">cheatsheet</a> <a href="/tags/concurrent/" style="font-size: 14px; color: #999">concurrent</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/google-test-blog-translation/" style="font-size: 14px; color: #999">google_test_blog_translation</a> <a href="/tags/interview/" style="font-size: 14px; color: #999">interview</a> <a href="/tags/java/" style="font-size: 21.5px; color: #666">java</a> <a href="/tags/junit/" style="font-size: 14px; color: #999">junit</a> <a href="/tags/justdoit/" style="font-size: 14px; color: #999">justdoit</a> <a href="/tags/ops/" style="font-size: 14px; color: #999">ops</a> <a href="/tags/patterns/" style="font-size: 24px; color: #555">patterns</a> <a href="/tags/performance/" style="font-size: 14px; color: #999">performance</a> <a href="/tags/productivity/" style="font-size: 16.5px; color: #888">productivity</a> <a href="/tags/python/" style="font-size: 16.5px; color: #888">python</a> <a href="/tags/real/" style="font-size: 21.5px; color: #666">real</a> <a href="/tags/testing/" style="font-size: 19px; color: #777">testing</a> <a href="/tags/think-different/" style="font-size: 16.5px; color: #888">think-different</a> <a href="/tags/thoughts/" style="font-size: 14px; color: #999">thoughts</a> <a href="/tags/tips/" style="font-size: 21.5px; color: #666">tips</a> <a href="/tags/ut/" style="font-size: 14px; color: #999">ut</a> <a href="/tags/word-frequency/" style="font-size: 14px; color: #999">word_frequency</a>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            
+
+
+
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:me@xaoxuu.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/xaoxuu"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>
+    本站使用
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    作为主题
+    
+      ，
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    。
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/search.js"></script>
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>

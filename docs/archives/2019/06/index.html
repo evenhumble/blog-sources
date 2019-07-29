@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Archives: 2019/6 | DIRTY HANDS QA</title>
+  
+  <meta name="keywords" content="Automation Testing,Performance Testing,Agile,Testing Tool Usage">
+  
+  
+  <meta name="description" content="Learning, Practice,And Never minded">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="msapplication-TileColor" content="#1BC3FB">
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/css/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover  half'>
+      
+        
+  <h1 class='title'>Material X</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header material">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="material"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          DIRTY HANDS QA
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogcategories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogtags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogarchives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/blog/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="blogarchives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+                
+                  rel="nofollow"
+                
+                
+                id="https:xaoxuu.comwikimaterial-x">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal no-title">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/06/27/loan-calculation/">
+      2019-06-27
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-06-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Loan-Calculation-Example"><a href="#Loan-Calculation-Example" class="headerlink" title="Loan Calculation Example"></a>Loan Calculation Example</h1><ul>
+<li>Loan Rule Defintion</li>
+<li>Installment Calculation</li>
+<li>Overdue Calculation</li>
+<li>IRR Calculation</li>
+</ul>
+<h2 id="Loan-Rule-Definition"><a href="#Loan-Rule-Definition" class="headerlink" title="Loan Rule Definition"></a>Loan Rule Definition</h2><p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/loan/loan_definition.jpg" alt="img"></p>
+<h2 id="Installments-Calculation"><a href="#Installments-Calculation" class="headerlink" title="Installments Calculation"></a>Installments Calculation</h2><ul>
+<li>repayment-Principal: ROUND(10000/3,2)</li>
+<li>repayment-interest: ROUND(10000*2%,2)</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/loan/normal_installment.jpg" alt="img"></p>
+<h2 id="Advanced-Repayment-calculation"><a href="#Advanced-Repayment-calculation" class="headerlink" title="Advanced Repayment calculation"></a>Advanced Repayment calculation</h2><p>Overall Payment = Current Term Repayment + Remain Principal+ default penalty(10000*1%)</p>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/loan/advanced_repayment.jpg" alt="img"></p>
+<h2 id="Overdue-Repayment-calculation"><a href="#Overdue-Repayment-calculation" class="headerlink" title="Overdue Repayment calculation"></a>Overdue Repayment calculation</h2><p>For example: </p>
+<p>Last Term: 4-1 is the repayment day, but actually repayment is occurred in 4-10, then it is default. And the default fee is over your imagination.</p>
+<ul>
+<li>Term1 Default Penalty: ROUND(3333.33<em>(0.02/30)*1.5</em>(60+9),2)</li>
+<li>Term2 Default Penalty: ROUND(3333.33<em>(0.02/30)*1.5</em>(30+9),2)</li>
+<li>Term3 Default Penalty: ROUND(3333.34<em>(0.02/30)*1.5</em>(0+9),2)</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/loan/overdue_repayment.jpg" alt="img"></p>
+<p>Don’t be default, man!!</p>
+<h2 id="IRR-Calculation"><a href="#IRR-Calculation" class="headerlink" title="IRR Calculation"></a>IRR Calculation</h2><p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/loan/IRR.jpg" alt="img"></p>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal no-title">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/06/27/Thoughts-Be-A-Touch-Tester/">
+      2019-06-27
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-06-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Think-in-Testing-1-Be-Tough"><a href="#Think-in-Testing-1-Be-Tough" class="headerlink" title="Think in Testing 1: Be Tough"></a>Think in Testing 1: Be Tough</h1><p>If someone tell you that software testing or quality assurance is an easy job to do, he/she might not understand what a tester or qa do.  There are many perspective a tester or qa involved:</p>
+<ol>
+<li>Testing</li>
+<li>Requirement Clarification</li>
+<li>Dev Process/Release Process </li>
+<li>Planning</li>
+</ol>
+<p>Almost every phase QA is involved, it can burn you out easily. Here I just want to talk about some bad thing might happed, and why be tough is a basic charactor of a QA or Tester.</p>
+<h2 id="Don’t-Be-a-maid"><a href="#Don’t-Be-a-maid" class="headerlink" title="Don’t Be a maid"></a>Don’t Be a maid</h2><p>Don’t be a maid, and don’t spend too much time on other’s careless and irresponsibility.<br>Need to fix it.</p>
+<p>In many Chinese domestic company, Tester and QA is a maid of Developer, everything could be in testing scope. Let me summarize several common cases:</p>
+<ol>
+<li>Some incomplete task, need to test</li>
+<li>Some codes never work, neet to test</li>
+<li>Some bug can’t be produced, need to test</li>
+<li>Some performance issues can’t be measured, need to test</li>
+<li>What ever the requirement is, no matter you tester invovled or not, send it to test</li>
+</ol>
+<p>And more important thing is that normally a tester/qa might face 5+ developers. If you can not be tough to Dev, your time and career might be spent for taking care of these guys mistakes,careless. Tester/QA is responsible for the product, not for careleass.<br>Yes, your are finding bugs, but what behind these bugs are careless and irresponsibility. You need to fix careless and irresponsibility though it is tough, so be tough.</p>
+<p>When a production bug occurred, no one will stand in your side.<br>So you need to exposure the facts, I mean real facts, where these bugs? and Why so many bugs, then you can push to reduce bugs, and push DEV moving forward, otherwise every dirty work will on your shoulder. Does DEV not know Unit test can help quality? They know,  Does DEV not know they should tell you a little bit more what a requirement is, because they know you don’t invloved at all in first place? They know, explaination is not a techinical work, in their option, it is not worth to do, that’s it.</p>
+<p>So just tell the dev/dev manager what you want, what the result right now, what is good and what is bad, they will learn from that. Dev Manager love to see feedback. Only thing<br>need to pay attention might be the reporting skill, and how to handle conflict.</p>
+<p>Be a maid is no future in tech world, no one really care about what the careless is, they care about the careless issue should be never happened. You can’t only spend time for others careless, you need to fix it for the root cause.<br>Good Luck, and we tester have long way to go, be tough!</p>
+<h2 id="Show-the-Data-Metrics"><a href="#Show-the-Data-Metrics" class="headerlink" title="Show the Data,Metrics"></a>Show the Data,Metrics</h2><p>Show the data, metrics is good to be professional, and just focus on the thing your team are talked about, not finger point. It can help you be tough and reasonable.<br>But What kind data you can show? It is a question, and also hard to implement. Based on my experience, data like:</p>
+<ol>
+<li>How many Bugs in a sprint?</li>
+<li>How the bugs distributed?</li>
+<li>How a typical bug impact the whole process?</li>
+<li>What the turn around time for the bug or an iteration?</li>
+</ol>
+<p>It is hard to collect data, but it is still worth to collect some of them.</p>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal no-title">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/06/27/api-testing/3-InteljIdea-codecoverage/">
+      2019-06-27
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-06-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Using-IntelljIdea-For-Code-Coverage"><a href="#Using-IntelljIdea-For-Code-Coverage" class="headerlink" title="Using IntelljIdea For Code Coverage"></a>Using IntelljIdea For Code Coverage</h1><p>Two Steps:</p>
+<ol>
+<li>Run Test Code with code coverage - Right click the test class, select run *** with code coverage</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/intellij/run_for_coverage.jpg" alt="img"></p>
+<ol start="2">
+<li>Check the Code Coverage in intelli idea</li>
+</ol>
+<ul>
+<li><p>Line Code Covearge/Method Coverage<br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/intellij/coverage_report.jpg" alt="img"></p>
+</li>
+<li><p>Read marked as not covered lines, green as covered lines<br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/intellij/not_covered.jpg" alt="img"><br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/intellij/coveredjpg" alt="img"></p>
+</li>
+</ul>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal no-title">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/06/27/api-testing/4-Productivity-SimpleMock/">
+      2019-06-27
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-06-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="The-Easiest-Mock-The-highest-ROI"><a href="#The-Easiest-Mock-The-highest-ROI" class="headerlink" title="The Easiest Mock, The highest ROI"></a>The Easiest Mock, The highest ROI</h1><p>Actually it is not about how to test Rule Based Risk Engine, it is about how to use simple codes to improve the<br>daily productivities. </p>
+<p>The Risk Engine is in the middle of the whole system, The upstream and downstream modules leverage<br>the result of the Risk Engine by API call in their own business flow. When other modules’s tester want to execute their test cases,<br>they often wanted to get the different risk engine results on demand. That means I needed to support them for their cases<br>as I am the owner of risk engine. Everyday, I was interrupted serveral times. It really bothered me a lot. I can’t refuse, but<br>need to find a solution. Then the easiest mock came. </p>
+<h2 id="Mock-Get-What-You-Set"><a href="#Mock-Get-What-You-Set" class="headerlink" title="Mock- Get What You Set!"></a>Mock- Get What You Set!</h2><p>It is quite simple but it is worth to write because it represents the value of codes which a tester can implement. I implemented a new WebService in our repo, and used a Map to store what the client set for mocking<br>purpose. Then next API call against the setting URL, the response is what the client Set even without any deployment or restart.</p>
+<p>How can I achieve this? The most important thing is that we used the configuration center - <a href="https://github.com/ctripcorp/apollo" target="_blank" rel="noopener">Apollo</a>. But does this mean in real case? You never need to restart the server for changing application properties. It makes things easier. The whole process was that:</p>
+<ol>
+<li>Setup Mock by calling: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">2. Change the Risk Engine Url to ```http://domain/mock/A/getMock``` in Apollo Portal </span><br><span class="line">3. Deploy the changes</span><br><span class="line">4. Other modules&apos; QA now can control the Risk Engine Response for any cases.</span><br><span class="line">   And even more, this actually can be  applied to any other Http service to decouple modules,free my time, and keep me focusing</span><br><span class="line"></span><br><span class="line">Here is the simple codes.It only takes 10 minutes to complete, but it saved me a lot of time in daily basis.</span><br><span class="line"></span><br><span class="line">- GenericMockStore for store Mock</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">@Component</span><br><span class="line">@Profile(&quot;test&quot;)</span><br><span class="line">public class GenericMockMemStore &#123;</span><br><span class="line"></span><br><span class="line">    private ConcurrentHashMap&lt;String, Object&gt; mockStore = new ConcurrentHashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    public void saveMock(String key, Object value) &#123;</span><br><span class="line">        this.mockStore.put(key, value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Object getMock(String key) &#123;</span><br><span class="line">        return this.mockStore.get(key);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>GenericMock Service</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/mock"</span>)</span><br><span class="line"><span class="meta">@Profile</span>(<span class="string">"test"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GenericMockController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> GenericMockMemStore mockMemStore;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/&#123;productName&#125;/setup"</span>)</span><br><span class="line">    <span class="meta">@PostMapping</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> MockSetupResponse <span class="title">setupMock</span><span class="params">(@RequestBody GenericMockResponse setupResponse,</span></span></span><br><span class="line"><span class="function"><span class="params">                                       @PathVariable String productName,</span></span></span><br><span class="line"><span class="function"><span class="params">                                       HttpServletRequest request)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        mockMemStore.saveMock(productName,setupResponse);</span><br><span class="line">        <span class="keyword">return</span> MockSetupResponse.success();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(value = <span class="string">"/&#123;productName&#125;/getMock"</span>,method = &#123;RequestMethod.GET,</span><br><span class="line">                                                                RequestMethod.POST,RequestMethod.PUT&#125;)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">getMock</span><span class="params">(@PathVariable String productName,</span></span></span><br><span class="line"><span class="function"><span class="params">                                       HttpServletRequest request)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">return</span>  mockMemStore.getMock(productName);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Here is an explaination for these codes:</p>
+<ol>
+<li>Two APIs:<ul>
+<li><code>POST /mock/{productName}/setup</code>  for setup mock for the <code>productName</code> you set</li>
+<li><code>/mock/{productName}/getMock</code> get the mock reponse which set previously</li>
+</ul>
+</li>
+<li><code>GenericMockMemStore</code>: Store the mocks by key: productName in memory</li>
+</ol>
+<p>Like I said before, the automation testing is not about automation, but about writing codes for testing,and productivity.<br>Automation is a conception, not an action. It is too big to accomplish. But Writing codes is actionable, and you can see what<br>you accomplished and what you improved immediately.</p>
+<p>And also know the infrastructure more, you will find the solution is in the upstream or low level.<br>This is a tip I used when I tested this project. Luckly it worked. But still it is not a perfect solution, there are qeustions over here:</p>
+<ol>
+<li>Is there any pain point to improve?</li>
+<li>How to make it happen?</li>
+<li>Don’t write any code, use exisitng tools like YAPI, can we achieve the same?</li>
+</ol>
+<p>Maybe you can find your answer, or stay tuned, I will write a post later.</p>
+<p>Finally It is honor to make these codes in the develop official repos.</p>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal no-title">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/06/27/api-testing/1-Demo-TestCase/">
+      2019-06-27
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-06-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Integration-Runner-Test-Case-Demo"><a href="#Integration-Runner-Test-Case-Demo" class="headerlink" title="Integration-Runner Test Case Demo"></a>Integration-Runner Test Case Demo</h1><p>Last chapter introduce how to build a test framework in two days,<br>In this chapter, let’s do demos:</p>
+<ul>
+<li>A Api TestCase</li>
+<li>Api Chain Test Case</li>
+<li>Pre-Condition And Verification Render to use context data</li>
+</ul>
+<h2 id="A-Api-TestCase"><a href="#A-Api-TestCase" class="headerlink" title="A Api TestCase"></a>A Api TestCase</h2><p>Here are two cases: </p>
+<ol>
+<li>after call HttpBin API, check the url field in response is <a href="http://httpbin.org" target="_blank" rel="noopener">http://httpbin.org</a></li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"verification"</span>: &#123;<span class="string">"url"</span>: <span class="string">"is_equal_to http://httpbin.org"</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>after call HttpBin API, check the headers.Accept field in response is application/json1</li>
+</ol>
+<p>The overall cases is:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"test_cases"</span>: [&#123;</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"getapi-tc-1"</span>,</span><br><span class="line">        <span class="string">"tc_id"</span>: <span class="string">"tc-get-1"</span>,</span><br><span class="line">        <span class="string">"steps"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">"name"</span>: <span class="string">"http get api"</span>,</span><br><span class="line">                <span class="string">"precondition"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"service"</span>: HttpBinGet,</span><br><span class="line">                <span class="string">"params"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"verification"</span>: &#123;<span class="string">"url"</span>: <span class="string">"is_equal_to http://httpbin.org"</span>&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]&#125;</span><br><span class="line">    ,&#123;</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"getapi-tc-21"</span>,</span><br><span class="line">        <span class="string">"tc_id"</span>: <span class="string">"tc-get-2"</span>,</span><br><span class="line">        <span class="string">"steps"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">"name"</span>: <span class="string">"http get api"</span>,</span><br><span class="line">                <span class="string">"precondition"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"service"</span>: HttpBinGet,</span><br><span class="line">                <span class="string">"params"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"verification"</span>: &#123;<span class="string">"headers.Accept"</span>: <span class="string">"is_equal_to application/json1"</span>&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]&#125;</span><br><span class="line"></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>and the demo codes are:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@allure.epic("testing http bin test cases")</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestHttpBinTestCase</span>:</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @allure.feature("testing http bin get")</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_httpbin_get</span><span class="params">(self)</span>:</span></span><br><span class="line">        runner = IntegrationExecutor(httpbinget_testcases)</span><br><span class="line">        result = runner.run()</span><br><span class="line">        <span class="keyword">assert</span> result.get_tc_result() == <span class="string">"pass"</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Api-Chain-Test-Case"><a href="#Api-Chain-Test-Case" class="headerlink" title="Api Chain Test Case"></a>Api Chain Test Case</h2><p>test cases:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line">    <span class="string">"test_cases"</span>: [&#123;</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"tc description"</span>,</span><br><span class="line">        <span class="string">"tc_id"</span>: <span class="string">"testCaseId"</span>,</span><br><span class="line">        <span class="string">"steps"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">"name"</span>: <span class="string">"http get api"</span>,</span><br><span class="line">                <span class="string">"precondition"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"service"</span>: HttpBinGet,</span><br><span class="line">                <span class="string">"params"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"post_action"</span>: &#123;<span class="string">"url"</span>: <span class="string">"url"</span>, <span class="string">"args"</span>: <span class="string">"args"</span>&#125;,</span><br><span class="line">                <span class="string">"verification"</span>: &#123;<span class="string">"url"</span>: <span class="string">"is_equal_to http://httpbin.org"</span>&#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">"name"</span>: <span class="string">"http post api"</span>,</span><br><span class="line">                <span class="string">"precondition"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"service"</span>: HttpBinPOST,</span><br><span class="line">                <span class="string">"params"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"post_action"</span>: &#123;&#125;,</span><br><span class="line">                <span class="string">"verification"</span>: &#123;<span class="string">"url"</span>: <span class="string">"is_equal_to http://httpbin.org"</span>&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@allure.epic("testing http bin test cases")</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestHttpBinTestCase</span>:</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @allure.feature("testing http bin get/post")</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_httpbin_tc</span><span class="params">(self)</span>:</span></span><br><span class="line">        runner = IntegrationExecutor(httpbin_testcases)</span><br><span class="line">        result = runner.run()</span><br><span class="line">        <span class="keyword">assert</span> result.get_tc_result() == <span class="string">"pass"</span></span><br></pre></td></tr></table></figure>
+
+<p>the test cases code is almost same.</p>
+<h2 id="Pre-Condition-And-Verification-Render-to-use-context-data"><a href="#Pre-Condition-And-Verification-Render-to-use-context-data" class="headerlink" title="Pre-Condition And Verification Render to use context data"></a>Pre-Condition And Verification Render to use context data</h2><p>This case is more complex, use pre-condition, post-action, and verficiation to checkout<br>how the context processing.</p>
+<p>We have two Api:</p>
+<ul>
+<li><code>/json</code> api to get a json, in this api’s response, there is a <code>author</code> field,<br>value is “Yours Truly”</li>
+<li><code>/cookies/set</code> api is to query a value by query parameter freeform</li>
+</ul>
+<p>So assume there is a workflow in real business:</p>
+<ol>
+<li>call <code>/json</code> to get author</li>
+<li>then use the author name to query(call <code>/cookie./set</code>) some author properties </li>
+</ol>
+<p>The author name might be changed over time in different environment, so I have to call<br>the api first in step 1, then getting the author name as the second api’s input, finally call the second<br>api then verify the result .</p>
+<p>So the example test cases is:</p>
+<ul>
+<li><p>Case 1: Use Context and Render Input and Verifications<br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/complex_case.jpg" alt="img"></p>
+</li>
+<li><p>Case2: Use jinja2 built-in filter to handle parameters in test cases</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/jinja2_filter.jpg" alt="img"></p>
+<p>and again, there is no re-invention, just use the exiting jinja2 template</p>
+<p>Detail please find the the codes in <a href="https://github.com/evenhumble/integration-executor-py" target="_blank" rel="noopener">github</a></p>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal no-title">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/06/27/api-testing/0-start-from-the-end/">
+      2019-06-27
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http:" rel="nofollow">
+      
+        <img src="https://avatars0.githubusercontent.com/u/21341419?s=460&v=4">
+      
+      <p>dh-qa</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-06-27</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="Implement-A-Integration-Libs-in-two-days"><a href="#Implement-A-Integration-Libs-in-two-days" class="headerlink" title="Implement A Integration Libs in two days"></a>Implement A Integration Libs in two days</h1><p>There is a question over my head several times. is it real hard for tester to write test codes?<br>I don’t know, but I just want to do a task to evaluate this conclusion.</p>
+<h2 id="Start-From-The-End"><a href="#Start-From-The-End" class="headerlink" title="Start From The End"></a>Start From The End</h2><p>I don’t prefer the term <strong><em>automation testing</em></strong>, but like the term <strong><em>write testing codes</em></strong>.<br>Automation testing is almost defined as failure in most of testers’s mind(not company, company still think it is valuable).<br>As I known, many testers(a big portion actually) just think automation testing is a political job which actually has no value at all in reality.<br>Most of the automation cases are never used after it passed one time.<br>Almost in every testing meet-up, there is always someone talked about test platform,how good it is,how easy to use.<br>But in reality,almost every test platform user complained the test platform is to hard to use. Why? and what’s the gap between those platform and<br>their users. </p>
+<p>I don’t know. But I just believe automation testing will never happen if you never write codes, only doing configuration like coding.<br>Write scripts should be a basic skill for tester, like eating or drinking. </p>
+<p>And in other hands, setting a high expectation in a short period of time which is way beyond the average tester’s coding skill.<br>There are too much legacy debit out there. High expectation meets even high debit, it can easily crash you.<br>The delayed schedule, the unreachable target, and voices like automation testing doesn’t work is just around you.<br>Finally, you will find out automation never from nowhere, it happened when you write codes line by line just.<br>And if you re-think about automation, it is quite reasonable. It is just like a product which want to automate business flow. The product is built by<br>tons of codes. So does automation testing. And also to pay back the debit, accumulate codes in daily basis in the key. Don’t expected to pay back it<br>in a short time, just focus accumulating the tests day in and day out, then someday, you will feel a little easy.</p>
+<p>Back to the topic, What the task is given to myself is that:</p>
+<ol>
+<li>Write A Simple Integration Libs as a tiny testing framework(just work) in 2-3 days</li>
+<li>Leverage Existing Libs as more as possible, and don’t write too much complex codes</li>
+<li>Integration library, not a http library. It is open for different component client</li>
+<li>The test codes could be used in any other place,but not only for testing</li>
+<li>Not strict, different coding level can use and ramp  up</li>
+</ol>
+<h2 id="Let’s-getting-start"><a href="#Let’s-getting-start" class="headerlink" title="Let’s getting start"></a>Let’s getting start</h2><p>Think about integration testing(not consider UI), it is actually calling different service or api, then get a result to verify.<br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/test-service.jpg" alt="img"></p>
+<p>And if in more complex workflow, it looks like a workflow or api call chain<br><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/chained-invoker.jpg" alt="img"></p>
+<p>So I need to abstract these into following conception:</p>
+<ol>
+<li><strong><em>Executor</em></strong>: execute the who process no matter how many steps the test case should have</li>
+<li><strong><em>Client</em></strong>: every api/service invoker is a client, no matter http,redis,database or whatever tester used in daily<br>basis for send a request to get a response </li>
+<li><strong><em>Validator</em></strong>: verify the result</li>
+<li><strong><em>TestCase</em></strong>:  test cases with test case data and steps</li>
+</ol>
+<h2 id="Executor-Integration-Executor"><a href="#Executor-Integration-Executor" class="headerlink" title="Executor - Integration Executor"></a>Executor - Integration Executor</h2><p>Integration Executor is used to run the whole test case, and it is the core<br>of this tiny lib, it targets to connect all the things used when testing.</p>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/process.jpg" alt="img"></p>
+<p>Before implement it, make the code structure first, it is quite clean and easy to understand</p>
+<p><img src="https://raw.githubusercontent.com/evenhumble/hustle-player/master/img/runner_structure.jpg" alt="img"></p>
+<p>Let’s do following things to implement it:</p>
+<ol>
+<li>define the test case data structure</li>
+<li>implement a generic client</li>
+<li>implement a extractor to extract data from response</li>
+<li>implement a validator to validate result</li>
+<li>implement a context to store and calculate runtime data when execute test cases</li>
+</ol>
+<h2 id="Client"><a href="#Client" class="headerlink" title="Client"></a>Client</h2><p>The client implement is for generic purpose, so I just define a callable object<br>or with a invoke method:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Client</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, params, env)</span>:</span></span><br><span class="line">        self.params = params</span><br><span class="line">        self.env = env</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">invoke</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        what ever</span></span><br><span class="line"><span class="string">        :return: ClientResponse</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError(<span class="string">"abstract class, need an implementation"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        print(<span class="string">"client should a callable object or with a invoke method"</span>)</span><br><span class="line">        <span class="keyword">return</span> self.invoke()</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"><span class="keyword">and</span> the response <span class="keyword">for</span> a client also need to be unified <span class="keyword">and</span> generic:</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ClientResponse</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>So basically I defined a generic client which the input is :</p>
+<ol>
+<li><figure class="highlight plain"><figcaption><span>input test data</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">2. ```env```: target environment</span><br><span class="line"></span><br><span class="line">Output is:</span><br><span class="line"></span><br><span class="line">```ClientReponse```: Generic Output Object, which have a status code and response data, data should </span><br><span class="line">be in json or dict which is easy to handle </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">A http client is implement based on python ```requests``` lib.</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line">http_methods = &#123;</span><br><span class="line"></span><br><span class="line">    &quot;get&quot;: requests.get,</span><br><span class="line">    &quot;post&quot;: requests.post,</span><br><span class="line">    &quot;delete&quot;: requests.delete,</span><br><span class="line">    &quot;put&quot;: requests.put,</span><br><span class="line">    &quot;option&quot;: requests.options</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class HttpClient(Client):</span><br><span class="line">    req_url = &quot;&quot;</span><br><span class="line">    domain = &quot;&quot;</span><br><span class="line">    headers = &#123;</span><br><span class="line">        &quot;accept&quot;: &quot;application/json&quot;,</span><br><span class="line">        &quot;content-type&quot;: &quot;application/json&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    req_body = &#123;&#125;  ## make sure the some variables with default values</span><br><span class="line">    query_params = []</span><br><span class="line">    method = &quot;post&quot;</span><br><span class="line"></span><br><span class="line">    def __init__(self, params, env):</span><br><span class="line">        super().__init__(params, env)</span><br><span class="line"></span><br><span class="line">    def invoke(self):</span><br><span class="line">        real_req_url = self.__build_request_url()</span><br><span class="line">        self.__build_header()</span><br><span class="line">        self.__build_body()</span><br><span class="line">        http_method = http_methods.get(self.method.lower(), requests.get)</span><br><span class="line">        response = http_method(url=real_req_url, headers=self.headers, data=self.req_body)</span><br><span class="line">        return make_client_response(response)</span><br><span class="line"></span><br><span class="line">    def __build_request_url(self):</span><br><span class="line">        if self.env.get_config_by_key(self.domain) is None:</span><br><span class="line">            raise ClientException(&quot;domain name should be set in environment or config file&quot;)</span><br><span class="line">        else:</span><br><span class="line">            url = self.env.get_config_by_key(self.domain)</span><br><span class="line"></span><br><span class="line">        real_req_url = url + self.__make_request_path() + self.__make_query_url()</span><br><span class="line">        return real_req_url</span><br><span class="line"></span><br><span class="line">    def __build_header(self):</span><br><span class="line">        if self.params.get(&quot;headers&quot;, &quot;&quot;) != &quot;&quot;:</span><br><span class="line">            for h_name, h_value in self.params.get(&quot;headers&quot;).items():</span><br><span class="line">                self.headers.update(&#123;h_name: h_value&#125;)</span><br><span class="line"></span><br><span class="line">    def __make_request_path(self):</span><br><span class="line">        self.req_url = self.req_url.format(**self.params)</span><br><span class="line">        return self.req_url</span><br><span class="line"></span><br><span class="line">    ## todo: set value in a dict,use path</span><br><span class="line">    def __build_body(self):</span><br><span class="line">        for param_name, param_value in self.params.items():</span><br><span class="line">            kv_util.set_value(self.req_body, param_name, param_value)</span><br><span class="line"></span><br><span class="line">    def __make_query_url(self):</span><br><span class="line">        query_url = &quot;&quot;</span><br><span class="line">        if len(self.query_params) &gt; 0:</span><br><span class="line">            query_url = query_url + &quot;?&quot;</span><br><span class="line">        # query_temp =&quot;%s=%s&amp;&quot;</span><br><span class="line">        for query_param in self.query_params:</span><br><span class="line">            if self.params.get(query_param, &quot;&quot;) != &quot;&quot;:</span><br><span class="line">                query_url = query_url + query_param + &quot;=&quot; + self.params.get(query_param, &quot;&quot;) + &quot;&amp;&quot;</span><br><span class="line">        return query_url</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>Don’t invent any new thing, just use <a href="http://docs.python-requests.org/zh_CN/latest/user/quickstart.html" target="_blank" rel="noopener">requests</a></p>
+<h2 id="Extractor"><a href="#Extractor" class="headerlink" title="Extractor"></a>Extractor</h2><p> First of all, why I need an extractor?<br> The extractor is used to get a value from a json or dict by an expression like jsonpath.<br> So that we can leverage this tiny tool to get any value in response.</p>
+<p> The demo:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">simple_dict_json = &#123;</span><br><span class="line">    <span class="string">"characters"</span>: &#123;</span><br><span class="line">        <span class="string">"Lonestar"</span>: &#123;</span><br><span class="line">            <span class="string">"id"</span>: <span class="number">55923</span>,</span><br><span class="line">            <span class="string">"role"</span>: <span class="string">"renegade"</span>,</span><br><span class="line">            <span class="string">"items"</span>: [</span><br><span class="line">                <span class="string">"space winnebago"</span>,</span><br><span class="line">                <span class="string">"leather jacket"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"Barfolomew"</span>: &#123;</span><br><span class="line">            <span class="string">"id"</span>: <span class="number">55924</span>,</span><br><span class="line">            <span class="string">"role"</span>: <span class="string">"mawg"</span>,</span><br><span class="line">            <span class="string">"items"</span>: [</span><br><span class="line">                <span class="string">"peanut butter jar"</span>,</span><br><span class="line">                <span class="string">"waggy tail"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"Dark Helmet"</span>: &#123;</span><br><span class="line">            <span class="string">"id"</span>: <span class="number">99999</span>,</span><br><span class="line">            <span class="string">"role"</span>: <span class="string">"Good is dumb"</span>,</span><br><span class="line">            <span class="string">"items"</span>: [</span><br><span class="line">                <span class="string">"Shwartz"</span>,</span><br><span class="line">                <span class="string">"helmet"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">"Skroob"</span>: &#123;</span><br><span class="line">            <span class="string">"id"</span>: <span class="number">12345</span>,</span><br><span class="line">            <span class="string">"role"</span>: <span class="string">"Spaceballs CEO"</span>,</span><br><span class="line">            <span class="string">"items"</span>: [</span><br><span class="line">                <span class="string">"luggage"</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># encoding: utf-8</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestDataExtractor</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_list_get_value_by_exp</span><span class="params">(self)</span>:</span></span><br><span class="line">        result = data_extractor.get_value_by_exp(simple_dict_json, <span class="string">"characters"</span>)</span><br><span class="line">        <span class="keyword">assert</span> len(result) &gt;= <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_get_value_by_exp</span><span class="params">(self)</span>:</span></span><br><span class="line">        result = data_extractor.get_value_by_exp(simple_dict_json, <span class="string">"characters.Lonestar.items[0]"</span>)</span><br><span class="line">        <span class="keyword">assert</span> result == <span class="string">"space winnebago"</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_get_value_by_exp_not_exist</span><span class="params">(self)</span>:</span></span><br><span class="line">        result = data_extractor.get_value_by_exp(simple_dict_json, <span class="string">"characters.Lonestar323.items[0]"</span>)</span><br><span class="line">        <span class="keyword">assert</span> result == <span class="string">"space winnebago"</span></span><br></pre></td></tr></table></figure>
+
+<p>just give a path expression, then get the value without going to a json level by level.</p>
+<p>Don’t invent new thing:  the implementation is relied on following lib:</p>
+<ul>
+<li>jmespath</li>
+<li>dictor</li>
+</ul>
+<h2 id="Validator"><a href="#Validator" class="headerlink" title="Validator"></a>Validator</h2><p>Validator is used to validate if an actually result meets the expected result.</p>
+<p>Also, refer to the assertPy, I did a function to validate result:</p>
+<p>The Demo: </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestValidator</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_demos</span><span class="params">(self)</span>:</span></span><br><span class="line">        result = validator.validate(<span class="string">"value"</span>,<span class="string">"is_equal_to test"</span>)</span><br><span class="line">        <span class="keyword">assert</span> result[<span class="number">0</span>],<span class="string">"fail"</span></span><br><span class="line">        print(str(result[<span class="number">1</span>]))</span><br></pre></td></tr></table></figure>
+
+<h2 id="Test-Case"><a href="#Test-Case" class="headerlink" title="Test Case"></a>Test Case</h2><p>Test Case is to connect all these things to feed into Integration Runner</p>
+<p>The Basic Schema is :</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line">    <span class="attr">"test_cases"</span>: [&#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"tc description"</span>,</span><br><span class="line">        <span class="attr">"tc_id"</span>: <span class="string">"testCaseId"</span>,</span><br><span class="line">        <span class="attr">"steps"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"name"</span>: <span class="string">"http get api"</span>,</span><br><span class="line">                <span class="attr">"precondition"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"service"</span>: HttpBinGet,</span><br><span class="line">                <span class="attr">"params"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"post_action"</span>: &#123;<span class="attr">"url"</span>: <span class="string">"url"</span>, <span class="attr">"args"</span>: <span class="string">"args"</span>&#125;,</span><br><span class="line">                <span class="attr">"verification"</span>: &#123;<span class="attr">"url"</span>: <span class="string">"is_equal_to http://httpbin.org"</span>&#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"name"</span>: <span class="string">"http post api"</span>,</span><br><span class="line">                <span class="attr">"precondition"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"service"</span>: HttpBinPOST,</span><br><span class="line">                <span class="attr">"params"</span>: &#123;<span class="attr">"url"</span>: <span class="string">"&#123;&#123;args&#125;&#125;"</span>&#125;,</span><br><span class="line">                <span class="attr">"post_action"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"verification"</span>: &#123;<span class="attr">"url"</span>: <span class="string">"is_equal_to http://httpbin.org"</span>, <span class="attr">"json"</span>: <span class="string">"is_none"</span>&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The schema is easy to understand. The <figure class="highlight plain"><figcaption><span>is for a Python Object, here</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">HttpBinGet is an api for call HttpBinGet service, and the service is also easy to </span><br><span class="line">implement.</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line">class HttpBinGet(HttpClient):</span><br><span class="line">    req_url = &quot;/get&quot;</span><br><span class="line">    domain = &quot;domain&quot;</span><br><span class="line">    headers = &#123;</span><br><span class="line">        &quot;accept&quot;: &quot;application/json&quot;,</span><br><span class="line">        &quot;content-type&quot;: &quot;application/json&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    req_body = &#123;&#125;  ## make sure the some variables with default values</span><br><span class="line">    query_params = []</span><br><span class="line">    method = &quot;GET&quot;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Context"><a href="#Context" class="headerlink" title="Context"></a>Context</h2><p>Context is used for store and calculate data. It will be used in executor<br>in process pre-condition and post action to handler.</p>
+<p>What data context stored in key-value manner, for example:</p>
+<p>in test case data:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"post_action"</span>: &#123;<span class="string">"url1"</span>: <span class="string">"url"</span>, <span class="string">"args1"</span>: <span class="string">"args"</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>the post action processor will put url1 as key, the value is the value extracted<br>by the path “url” from response</p>
+<p>and also, the context will used to render data in process pre-condition,<br>because some input data is in generated in runtime:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"params"</span>: &#123;<span class="string">"url"</span>: <span class="string">"&#123;&#123;args&#125;&#125;"</span>&#125;</span><br></pre></td></tr></table></figure>
+
+ will be replaced by a value which is from response before. Use python template lib
+<p>jinja2 can achieve it.</p>
+<h2 id="Revisit-Executor"><a href="#Revisit-Executor" class="headerlink" title="Revisit Executor"></a>Revisit Executor</h2><p>Now every tiny thing is ready for Executor. And everything is ready.</p>
+<p>For Detail please refer the demo.</p>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
+
+  
+
+
+	
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+        
+          
+          
+            <section class='widget author'>
+  <div class='content material'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png'/>
+      </div>
+    
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:me@xaoxuu.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/xaoxuu"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=63035382"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            <section class='widget grid'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/API-Testing/" style="font-size: 19px; color: #777">API Testing</a> <a href="/tags/Automation/" style="font-size: 16.5px; color: #888">Automation</a> <a href="/tags/CI-CD/" style="font-size: 19px; color: #777">CI/CD</a> <a href="/tags/CICD/" style="font-size: 14px; color: #999">CICD</a> <a href="/tags/JAVA/" style="font-size: 14px; color: #999">JAVA</a> <a href="/tags/MAVEN/" style="font-size: 14px; color: #999">MAVEN</a> <a href="/tags/Notes/" style="font-size: 14px; color: #999">Notes</a> <a href="/tags/Performance/" style="font-size: 14px; color: #999">Performance</a> <a href="/tags/Project-Setup/" style="font-size: 14px; color: #999">Project Setup</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/TDD/" style="font-size: 14px; color: #999">TDD</a> <a href="/tags/ThinkInTesting/" style="font-size: 14px; color: #999">ThinkInTesting</a> <a href="/tags/ThreadDump/" style="font-size: 14px; color: #999">ThreadDump</a> <a href="/tags/Tip/" style="font-size: 14px; color: #999">Tip</a> <a href="/tags/agile-metrics/" style="font-size: 14px; color: #999">agile metrics</a> <a href="/tags/algorithm/" style="font-size: 14px; color: #999">algorithm</a> <a href="/tags/annaconda3/" style="font-size: 14px; color: #999">annaconda3</a> <a href="/tags/ansible/" style="font-size: 16.5px; color: #888">ansible</a> <a href="/tags/cheatsheet/" style="font-size: 14px; color: #999">cheatsheet</a> <a href="/tags/concurrent/" style="font-size: 14px; color: #999">concurrent</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/google-test-blog-translation/" style="font-size: 14px; color: #999">google_test_blog_translation</a> <a href="/tags/interview/" style="font-size: 14px; color: #999">interview</a> <a href="/tags/java/" style="font-size: 21.5px; color: #666">java</a> <a href="/tags/junit/" style="font-size: 14px; color: #999">junit</a> <a href="/tags/justdoit/" style="font-size: 14px; color: #999">justdoit</a> <a href="/tags/ops/" style="font-size: 14px; color: #999">ops</a> <a href="/tags/patterns/" style="font-size: 24px; color: #555">patterns</a> <a href="/tags/performance/" style="font-size: 14px; color: #999">performance</a> <a href="/tags/productivity/" style="font-size: 16.5px; color: #888">productivity</a> <a href="/tags/python/" style="font-size: 16.5px; color: #888">python</a> <a href="/tags/real/" style="font-size: 21.5px; color: #666">real</a> <a href="/tags/testing/" style="font-size: 19px; color: #777">testing</a> <a href="/tags/think-different/" style="font-size: 16.5px; color: #888">think-different</a> <a href="/tags/thoughts/" style="font-size: 14px; color: #999">thoughts</a> <a href="/tags/tips/" style="font-size: 21.5px; color: #666">tips</a> <a href="/tags/ut/" style="font-size: 14px; color: #999">ut</a> <a href="/tags/word-frequency/" style="font-size: 14px; color: #999">word_frequency</a>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            
+
+
+
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:me@xaoxuu.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/xaoxuu"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>
+    本站使用
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    作为主题
+    
+      ，
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    。
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/search.js"></script>
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
