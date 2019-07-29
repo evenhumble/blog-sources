@@ -1,5 +1,11 @@
 # evenhumble.github.com
-tester's blog
 
+Tester's Blog Sources
 
-## 
+## Deploy as blog
+
+```sh
+hexo generate
+cp public/* docs
+rm -rf public 
+```
